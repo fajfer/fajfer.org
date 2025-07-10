@@ -118,12 +118,10 @@ This approach makes the best use of Artifactory's API and doesn't require the im
 
 Cosign support of Artifactory is very well done and the Artifactory knows that it serves you signed images as it sends you a signature along with the container after executing docker pull. The API doesn't reflect that though, but that's hopefully going to change in the future. Container signing becomes more popular and more accessible thanks to tools like cosign, notary and kyverno to name a few so doing workarounds like this shouldn't be required in the future.
 
-[^signing] Jabar Asadi, "Digital Signature With Cosign" May 4, 2023. https://eng.d2iq.com/blog/digital-signature-with-cosign/ Accessed 22.07.2023
+[^signing]: Jabar Asadi, "Digital Signature With Cosign" May 4, 2023. https://eng.d2iq.com/blog/digital-signature-with-cosign/ Accessed 22.07.2023
 
-[^docs-signing] Sigstore, "Signing Containers" https://docs.sigstore.dev/cosign/signing_with_containers/ GitHub: 18b11e2
+[^docs-signing]: Sigstore, "Signing Containers" https://docs.sigstore.dev/cosign/signing_with_containers/ GitHub: 18b11e2
 
-[^docs-verifying] Sigstore, "Verifying" https://docs.sigstore.dev/cosign/verify GitHub: 4186c93
+[^docs-verifying]: Sigstore, "Verifying" https://docs.sigstore.dev/cosign/verify GitHub: 4186c93
 
-[^artifactory] JFrog Artifactory Documentation, "Docker Registry" https://jfrog.com/help/r/jfrog-artifactory-documentation/docker-registry Accessed: 23.07.2023
-
-<meta name="fediverse:creator" content="@fajfer@mastodon.social">
+[^artifactory]: JFrog Artifactory Documentation, "Docker Registry" https://jfrog.com/help/r/jfrog-artifactory-documentation/docker-registry Accessed: 23.07.2023
