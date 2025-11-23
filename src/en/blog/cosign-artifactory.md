@@ -4,12 +4,11 @@ description: In this article, we will explore the process of signing Docker cont
 date: 2023-07-23T12:00:00
 author: Damian Fajfer
 tags: 
-    - blog
     - devops
     - ansible
     - artifactory
     - cosign
-    - docker
+    - containers
 ---
 
 Additionally, we'll delve into a proposed solution for copying the signature to a target repository during artifact promotion or copying phases, addressing potential challenges in the process.
@@ -125,3 +124,5 @@ Cosign support of Artifactory is very well done and the Artifactory knows that i
 [^docs-verifying]: Sigstore, "Verifying" https://docs.sigstore.dev/cosign/verify GitHub: 4186c93
 
 [^artifactory]: JFrog Artifactory Documentation, "Docker Registry" https://jfrog.com/help/r/jfrog-artifactory-documentation/docker-registry Accessed: 23.07.2023
+
+<meta name="fediverse:creator" content="@fajfer@mastodon.social">
