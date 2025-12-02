@@ -6,6 +6,9 @@ const CleanCSS = require("clean-css");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 module.exports = function (eleventyConfig) {
+    eleventyConfig.setServerOptions({
+        port: 8085
+    });
     eleventyConfig.addWatchTarget("./src/sass/");
     eleventyConfig.addPassthroughCopy("./src/js"); // All files is "src/js" are copied as such in "public/js"
     eleventyConfig.addPassthroughCopy("./src/img"); // All files is "src/img" are copied as such in "public/img"

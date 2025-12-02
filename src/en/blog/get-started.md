@@ -34,7 +34,7 @@ npm run dev # with npm
 yarn dev # with Yarn
 ```
 
-You can now open you favorite web browser, navigate to [localhost:8080](http://localhost:8080), and see the live result!  
+You can now open you favorite web browser, navigate to [localhost:8085](http://localhost:8085), and see the live result!  
 
 ## Adapt the content
 
@@ -97,7 +97,7 @@ The first customisation that you will probably want to bring is changing the con
     // I recommend to leave it as it is 
     // and subsitute it with the final 
     // URL at deployment time.
-    "baseUrl": "http://localhost:8080",
+    "baseUrl": "http://localhost:8085",
 
     // General blog keywords. 
     // They will be used in the <meta> 

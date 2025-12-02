@@ -14,7 +14,7 @@
         "en": "fajfer.org",
         "pl": "fajfer.org"
     },
-    "baseUrl": "http://localhost:8080",
+    "baseUrl": "https://blog.fajfer.org",
     "keywords": {
         "en": "devops, homelab, free software",
         "pl": "devops, homelab, wolne oprogramowanie"
