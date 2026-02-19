@@ -4,6 +4,7 @@
   <head>
   {% include "components/meta.html" %}
     <title>{{ title }}</title>
+    <script defer data-domain="blog.fajfer.org" src="https://analiza.reszka.org/js/script.js"></script>
     <link {% if data.languages[0] === lang %}id="default-lang"{% endif %} rel="alternate" hreflang="{{ lang }}" href="{{ [data.baseUrl, page.url] | join }}">
     {% for link in page.url | locale_links %}
     <link {% if data.languages[0] === link.lang %}id="default-lang"{% endif %} rel="alternate" hreflang="{{ link.lang }}" href="{{ [data.baseUrl, link.url] | join | url }}">

@@ -9,6 +9,7 @@ about: ❔
 <head>
     {% include "components/meta.html" %}
     <title>{{ data.title[data.languages[0]] }}</title>
+    <script defer data-domain="blog.fajfer.org" src="https://analiza.reszka.org/js/script.js"></script>
     <meta name="author" content="{{ data.author }}">
     <meta name="keywords" content="{{ data.keywords[data.languages[0]] }}">
     {% for lang in data.languages %}
