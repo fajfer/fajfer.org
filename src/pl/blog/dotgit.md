@@ -40,7 +40,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-Git służy do przechowywania historii zmian. Poprzednie commity są w formacie binarnym, w najprostszy sposób możemy dotrzeć do nich używając polecenia `git reset --hard`
+Git służy do przechowywania historii zmian. Poprzednie commity są w formacie binarnym, w najprostszy sposób możemy dotrzeć do nich używając polecenia `git restore .`
 
 ```bash
 $ ls -a
