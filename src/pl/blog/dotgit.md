@@ -91,9 +91,9 @@ Tu się będę już czepiał, ale chcę pokazać dlaczego jawna wersja oprogramo
 ![Najnowszy znaleziony commit]({{ '/img/blog/dotgit/commit.png' }})
 
 
-[^htpasswd]: https://pl.wikipedia.org/wiki/.htpasswd Dostęp 19.02.2026
-[^focal]: https://launchpad.net/ubuntu/focal/+source/apache2 Dostęp 19.02.2026
-[^jammy]: https://packages.ubuntu.com/jammy/apache2 Dostęp 19.02.2026
+[^htpasswd]: [https://pl.wikipedia.org/wiki/.htpasswd](https://pl.wikipedia.org/wiki/.htpasswd) Dostęp 19.02.2026
+[^focal]: [https://launchpad.net/ubuntu/focal/+source/apache2](https://launchpad.net/ubuntu/focal/+source/apache2) Dostęp 19.02.2026
+[^jammy]: [https://packages.ubuntu.com/jammy/apache2](https://packages.ubuntu.com/jammy/apache2) Dostęp 19.02.2026
 
 ## Wnioski
 
