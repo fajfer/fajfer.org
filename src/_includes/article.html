@@ -4,7 +4,12 @@
     <head>
         {% include "components/meta.html" %}
         <title>{{ title }}</title>
-        <script defer data-domain="blog.fajfer.org" src="https://analiza.reszka.org/js/script.js"></script>
+        <!-- Privacy-friendly analytics by Plausible -->
+        <script async src="https://analiza.reszka.org/js/pa-b_D8jaYGes8e19er1lSla.js"></script>
+        <script>
+        window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+        plausible.init()
+        </script>
         <link {% if data.languages[0]===lang %}id="default-lang" {% endif %} rel="alternate" hreflang="{{ lang }}"
               href="{{ [data.baseUrl, page.url] | join }}">
         {% for link in page.url | locale_links %}
