@@ -1,6 +1,6 @@
 ---
-title: Running Green Cell UPS app (GCUPS) on GNU/Linux server
-description: There are a lot of people utilizing homelabs or home servers for various things. After I lost some of my data because of power outage somewhere back in 2016 I usually have some kind of backup or at least data duplication.
+title: Uruchamianie aplikacji Green Cell UPS (GCUPS) na serwerze GNU/Linux
+description: Wiele osób korzysta z homelabów lub serwerów domowych do różnych celów. Po tym jak straciłem część danych z powodu awarii zasilania gdzieś w 2016 roku, zwykle mam jakiś backup lub przynajmniej duplikację danych.
 date: 2023-09-16T12:00:00
 author: Damian Fajfer
 tags: 
@@ -8,18 +8,20 @@ tags:
     - containers
 ---
 
-If you're one of these people you probably also want/need an UPS. Since I'm installing a data box I've been searching for an UPS to support the rest of my 11" rack and couldn't really find anything appealing to me on the local market from APC. After some research I realized that I would love to have an exchangeable battery so I've acquired a Green Cell UPS in the process. They advertised a dedicated software that comes with it but it didn't really matter to me until I've discovered that it supports several GNU/Linux distributions.
+PRZETŁUMACZONE MASZYNOWO - OGÓLNIE TODO
+
+Jeśli jesteś jedną z tych osób, prawdopodobnie też chcesz/potrzebujesz UPS-a. Ponieważ instalowałem skrzynkę teleinformatyczną, szukałem UPS-a do obsługi reszty mojego racka 11" i nie mogłem znaleźć niczego atrakcyjnego na lokalnym rynku od APC. Po pewnych poszukiwaniach zdałem sobie sprawę, że chciałbym mieć wymienną baterię, więc w trakcie nabyłem UPS Green Cell. Reklamowali dedykowane oprogramowanie, które do niego dołączają, ale nie miało to dla mnie znaczenia, dopóki nie odkryłem, że obsługuje kilka dystrybucji GNU/Linux.
 
 | | |
 |:---:|:---:|
-| ![Cosign signature in Artifactory]({{ '/img/blog/gcups/eon.jpg' }}) | ![Cosign signature in Artifactory]({{ '/img/blog/gcups/ups.webp' }}) |
-| I like how Green Cell UPS looks similar to the EON from the video game Original War | |
+| ![Sygnatura Cosign w Artifactory]({{ '/img/blog/gcups/eon.jpg' }}) | ![Sygnatura Cosign w Artifactory]({{ '/img/blog/gcups/ups.webp' }}) |
+| Podoba mi się jak UPS Green Cell wygląda podobnie do EON-a z gry Original War | |
 
-## GC UPS App
+## Aplikacja GC UPS
 
-On their [download page](https://gcups.greencell.global/en) (edit: or my [GitHub](https://github.com/fajfer/gcups)) they offer gcups (that's how it's called) for all modern desktop systems - Windows, MacOS and, surprisingly, Linux support for .deb, .rpm, .pacman and .tar.gz (with some shell scripts). There's a pretty solid multi-platform choice as they are using Electron running on Chromium. The worst thing is that this software isn't open source.
+Na ich [stronie pobierania](https://gcups.greencell.global/en) (edycja: lub mój [GitHub](https://github.com/fajfer/gcups)) oferują gcups (tak się nazywa) dla wszystkich nowoczesnych systemów desktopowych - Windows, MacOS i, co zaskakujące, wsparcie dla Linuxa w postaci .deb, .rpm, .pacman i .tar.gz (z kilkoma skryptami shell). Jest to całkiem solidny wybór wieloplatformowy, ponieważ używają Electrona działającego na Chromium. Najgorszą rzeczą jest to, że to oprogramowanie nie jest open source.
 
-All in all, Linux support convinced me to give it a try. I'm not going to do much of a review of it. Once I ran some successful tests via webGUI I thought that it could be useful to run it, just not on my desktop. I've tried running gcups with some parameters to demonize it but to no avail. At the time of writing this article I'm using version 1.1.7 released 02.06.2023. Running gcups on my server gave me this output:
+Ogólnie rzecz biorąc, wsparcie dla Linuxa przekonało mnie do wypróbowania. Nie zamierzam robić większej recenzji tego oprogramowania. Gdy przeprowadziłem kilka udanych testów przez webGUI, pomyślałem, że mogłoby być przydatne do uruchomienia, tylko nie na moim desktopie. Próbowałem uruchomić gcups z jakimiś parametrami, żeby go zdemonizować, ale bez powodzenia. W czasie pisania tego artykułu używam wersji 1.1.7 wydanej 02.06.2023. Uruchomienie gcups na moim serwerze dało mi następujący output:
 
 ```bash
 $ gcups 
@@ -30,12 +32,12 @@ Segmentation fault (core dumped)
 
 | |
 |:---:|
-| ![Cosign signature in Artifactory]({{ '/img/blog/gcups/gc-odp.png' }}) |
-| Support replying to me that there is no way to run gcups without the GUI, let's prove them wrong |
+| ![Sygnatura Cosign w Artifactory]({{ '/img/blog/gcups/gc-odp.png' }}) |
+| Support odpowiadający mi, że nie ma sposobu na uruchomienie gcups bez GUI, udowodnijmy, że się mylą |
 
-## Running gcups in CLI environment
+## Uruchamianie gcups w środowisku CLI
 
-Searching for some information on running gcups didn't get me anywhere (version 1.0.0 was published in June 2022) so I started tinkering a bit. Even if I went as far (or as near) as getting this running without X server I'd still need to enable HTTP server in the application settings. I've been doing the usual stuff but I didn't notice any new processes starting up if I enable the web server, `strings` didn't give me any insightful output non-specific to Chromium, I couldn't find anything in the `~/.config/gcups` either. There is also an `/opt/gcups` directory being created during the install so I've eventually began searching in the db folder and - hooray - this was the place.
+Szukanie informacji na temat uruchamiania gcups nigdzie mnie nie zaprowadziło (wersja 1.0.0 została opublikowana w czerwcu 2022), więc zacząłem majstrować. Nawet gdybym poszedł tak daleko (lub tak blisko) jak uruchomienie tego bez X serwera, nadal musiałbym włączyć serwer HTTP w ustawieniach aplikacji. Robiłem standardowe rzeczy, ale nie zauważyłem żadnych nowych procesów uruchamiających się po włączeniu serwera web, `strings` nie dał mi żadnego wnikliwego outputu niespecyficznego dla Chromium, nie mogłem też niczego znaleźć w `~/.config/gcups`. Jest też katalog `/opt/gcups` tworzony podczas instalacji, więc ostatecznie zacząłem szukać w folderze db i - hurra - to było to miejsce.
 
 ```bash
 /opt/gcups/db$ ls
@@ -48,11 +50,11 @@ gcups-rxdb-0-register-local                                             gcups-rx
 gcups-rxdb-0-register-mrview-692a6698c32319395128b449dfae271e           gcups-rxdb-0-test-measurement-mrview-99560a34de60f5074dcd2be42069d585
 gcups-rxdb-0-_rxdb_internal                                             gcups-rxdb-0-test-mrview-8b2440dfbb354345cc5c69a011a2beb9
 gcups-rxdb-0-scheduler                                                  gcups-rxdb-0-test-mrview-8b851648c605dcf349b861f65fdffef5
-gcups-rxdb-0-scheduler-local                                            gcups-rxdb-1-settings  <--- this is the one that's interesting to us
+gcups-rxdb-0-scheduler-local                                            gcups-rxdb-1-settings  <--- ten jest interesujący
 gcups-rxdb-0-scheduler-mrview-2f6b156c4b77dd00407dbed941ee1abf          pouch__all_dbs__
 ```
 
-I've accessed gcups-rxdb-1-settings database using LevelDB via python:
+Uzyskałem dostęp do bazy danych gcups-rxdb-1-settings używając LevelDB przez pythona:
 
 ```python3
 import plyvel
@@ -62,56 +64,56 @@ for key, value in db:
     print(f"{key.decode()}: {value.decode()}")
 ```
 
-Which gives us an interesting output:
+Co daje nam interesujący output:
 
 ```
-ÿby-sequenceÿ0000000000000001: {"api":{"port":8080,"password":"password hash here","enable":true,"salt":"password salt here"},"_attachments":{},"_id":"a733f0a7-4fe2-4120-8603-775370fd871a","_rev":"12-c2e2e2d475614a9aed42806e63a38338"}
+ÿby-sequenceÿ0000000000000001: {"api":{"port":8080,"password":"hash hasła tutaj","enable":true,"salt":"sól hasła tutaj"},"_attachments":{},"_id":"a733f0a7-4fe2-4120-8603-775370fd871a","_rev":"12-c2e2e2d475614a9aed42806e63a38338"}
 ```
 
-To break up the most interesting parts:
+Rozbijając najciekawsze części:
 
-- **port** is pretty obvious, this is just an HTTP port for our webserver
-- **enable** tells us if the HTTP server is enabled by default on gcups run
+- **port** jest dość oczywisty, to po prostu port HTTP dla naszego serwera web
+- **enable** mówi nam, czy serwer HTTP jest domyślnie włączony przy uruchomieniu gcups
 
-What I found is that you can actually just replace the first and only sequence for gcups to work. There's a (4th from the end) key called `document-store` which stores all revs of the previous sequences as well as the `winningRev` but only the `seq` value matters in this case, which is in most cases your last `by-sequence`.
+Odkryłem, że można po prostu zastąpić pierwszą i jedyną sekwencję, żeby gcups działał. Jest klucz (4ty od końca) o nazwie `document-store`, który przechowuje wszystkie revy poprzednich sekwencji oraz `winningRev`, ale w tym przypadku liczy się tylko wartość `seq`, która w większości przypadków jest twoją ostatnią `by-sequence`.
 
-## Generating your own by-sequence
+## Generowanie własnej by-sequence
 
-Now that we know how to access gcups settings without running the gcups itself we need to replace port (optionally), enabled, password and salt. I don't know how to generate salt and password by hand so I'd recommend installing gcups locally, configuring it and then exporting this setting to your server. **Keep in mind, that you can't change your password from the webGUI**. To do this simply install gcups locally, set the password up and enable HTTP server in the settings. Afterwards proceed to `/opt/gcups/db/gcups-rxdb-1-settings` and perform PUT on your data: 
+Teraz gdy wiemy jak uzyskać dostęp do ustawień gcups bez uruchamiania samego gcups, musimy zastąpić port (opcjonalnie), enabled, password i salt. Nie wiem jak wygenerować salt i password ręcznie, więc zalecam zainstalowanie gcups lokalnie, skonfigurowanie go, a następnie wyeksportowanie tego ustawienia na swój serwer. **Pamiętaj, że nie możesz zmienić hasła z webGUI**. Aby to zrobić, po prostu zainstaluj gcups lokalnie, ustaw hasło i włącz serwer HTTP w ustawieniach. Następnie przejdź do `/opt/gcups/db/gcups-rxdb-1-settings` i wykonaj PUT na swoich danych:
 
 ```python3
 import plyvel
 db = plyvel.DB('/opt/gcups/db/gcups-rxdb-1-settings')
 
-db.put(b'\xc3\xbfby-sequence\xc3\xbf0000000000000001', b'{"api":{"port":8080,"password":"password hash here","enable":true,"salt":"password salt here"},"_attachments":{},"_id":"a733f0a7-4fe2-4120-8603-775370fd871a","_rev":"12-c2e2e2d475614a9aed42806e63a38338"}')
+db.put(b'\xc3\xbfby-sequence\xc3\xbf0000000000000001', b'{"api":{"port":8080,"password":"hash hasła tutaj","enable":true,"salt":"sól hasła tutaj"},"_attachments":{},"_id":"a733f0a7-4fe2-4120-8603-775370fd871a","_rev":"12-c2e2e2d475614a9aed42806e63a38338"}')
 ```
 
-You don't need to do anything else now. I've mimicked xserver by using `xvfb` and it enables you to run gcups on your server this way:
+Nie musisz robić nic więcej. Naśladowałem xserver używając `xvfb` i pozwala to na uruchomienie gcups na serwerze w ten sposób:
 
 `xvfb-run gcups`
 
-Afterwards, you can access your gcups webGUI on the `host:port` on your server you specified in the `by-sequence`
+Następnie możesz uzyskać dostęp do webGUI gcups na `host:port` na swoim serwerze, który określiłeś w `by-sequence`
 
-## Closing thoughts
+## Podsumowanie
 
-I've contacted the support two times to confirm that the software is not supposed to work without GUI. There is going to be a purely cli solution for gcups and it's on the Green Cell's roadmap but it is unknown when it's going to be released which made me spend one evening trying to run it non-intended way.
+Skontaktowałem się z supportem dwa razy, aby potwierdzić, że oprogramowanie nie ma działać bez GUI. Będzie czysto CLI-owe rozwiązanie dla gcups i jest ono na roadmapie Green Cell, ale nie wiadomo kiedy zostanie wydane, co sprawiło, że spędziłem jeden wieczór próbując uruchomić to w niezamierzony sposób.
 
-I'm thinking about containerization of the complete solution sometime this year, I will update the blogpost afterwards and provide a ready docker-compose with USB passthrough to the container (UPS connects via USB to the machine for gcups to be functional). It would be cool if I also learned how to generate pass/salt combination for gcups as I haven't given it much thought.
+Myślę o konteneryzacji kompletnego rozwiązania jeszcze w tym roku, zaktualizuję wpis na blogu później i dostarczę gotowy docker-compose z przekazaniem USB do kontenera (UPS łączy się przez USB z maszyną, żeby gcups był funkcjonalny). Fajnie byłoby też, gdybym nauczył się jak generować kombinację pass/salt dla gcups, bo nie poświęciłem temu zbyt wiele uwagi.
 
-And last but not least - there is no point for such software to **NOT** be free software. The only meaningful thing this would expose would be communication scheme between the software and the UPS. So what? Every UPS manufacturer communicates to his UPS in a different way as there is no general protocol on how it should be done. I don't think that it's much of a secret and that it eventually couldn't be exposed with some work anyway. Even if gcups would be free and people decided to use non-Green Cell developed solutions it would still be beneficial for Green Cell as, because of the different communication schemes, these 3rd party solutions would still only support their product. 
+I last but not least - nie ma sensu, żeby takie oprogramowanie **NIE** było wolnym oprogramowaniem. Jedyną znaczącą rzeczą, którą by to ujawniło, byłby schemat komunikacji między oprogramowaniem a UPS-em. I co z tego? Każdy producent UPS-ów komunikuje się ze swoim UPS-em w inny sposób, ponieważ nie ma ogólnego protokołu określającego jak to powinno być zrobione. Nie sądzę, żeby to był wielki sekret i że ostatecznie nie mógłby zostać ujawniony przy odrobinie pracy. Nawet gdyby gcups był wolny i ludzie zdecydowali się używać rozwiązań nieopracowanych przez Green Cell, nadal byłoby to korzystne dla Green Cell, ponieważ z powodu różnych schematów komunikacji, te rozwiązania firm trzecich nadal obsługiwałyby tylko ich produkt.
 
-Now that it's closed source my work was focused on bypassing xserver requirement instead of making their product better and their product wouldn't exist if not for open source anyway.
+Teraz gdy jest to closed source, moja praca skupiła się na obejściu wymagania xservera zamiast ulepszaniu ich produktu, a ich produkt nie istniałby, gdyby nie open source.
 
-## UPDATE 03.04.2024
+## AKTUALIZACJA 03.04.2024
 
-Hey guys! Motivated by comments from Robert I managed to dockerize the above solution. There's still some work but I'm willing to take it on and maintain the project.
+Hej! Zmotywowany komentarzami od Roberta udało mi się zdockeryzować powyższe rozwiązanie. Jest jeszcze trochę pracy, ale jestem gotów się jej podjąć i utrzymywać projekt.
 
 https://github.com/fajfer/gcups
 
 `docker pull ghcr.io/fajfer/gcups:1.1.7`
 
-## UPDATE 19.08.2024
+## AKTUALIZACJA 19.08.2024
 
-Due to popular demand I've created a Matrix chat room so I can aid you at a whim (or a bit later) - https://matrix.to/#/#gcups:fsfe.org
+Ze względu na popularne zapotrzebowanie utworzyłem pokój czatowy Matrix, żebym mógł pomagać wam na zawołanie (lub trochę później) - https://matrix.to/#/#gcups:fsfe.org
 
 <meta name="fediverse:creator" content="@fajfer@mastodon.social">

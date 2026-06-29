@@ -1,6 +1,6 @@
 ---
-title: Cosign signatures lifecycle in Artifactory
-description: In this article, we will explore the process of signing Docker containers using Cosign and signatures lifecycle in Artifactory docker registry.
+title: Cykl życia sygnatur Cosign w Artifactory
+description: W tym artykule omówimy proces podpisywania kontenerów Docker za pomocą Cosign oraz cykl życia sygnatur w rejestrze docker Artifactory.
 date: 2023-07-23T12:00:00
 author: Damian Fajfer
 tags: 
@@ -11,26 +11,28 @@ tags:
     - containers
 ---
 
-Additionally, we'll delve into a proposed solution for copying the signature to a target repository during artifact promotion or copying phases, addressing potential challenges in the process.
+PRZETŁUMACZONE MASZYNOWO - OGÓLNIE TODO
 
-Details regarding signing and verifying docker containers won't be covered in this blog post. This has been very well explained in other people blog posts[^signing], as well as in the official documentation[^docs-signing][^docs-verifying]. It's safe to say that it works since at least 2021.
+Dodatkowo zagłębimy się w proponowane rozwiązanie kopiowania sygnatury do docelowego repozytorium podczas fazy promocji lub kopiowania artefaktów, odnosząc się do potencjalnych wyzwań w tym procesie.
 
-## Working with Artifactory
+Szczegóły dotyczące podpisywania i weryfikacji kontenerów docker nie będą omawiane w tym wpisie. Zostało to bardzo dobrze wyjaśnione w innych wpisach blogowych[^signing], jak również w oficjalnej dokumentacji[^docs-signing][^docs-verifying]. Można śmiało powiedzieć, że działa to co najmniej od 2021 roku.
 
-Before going on with signing we need to authenticate ourselves to the docker registry. I'm using Artifactory docker registry[^artifactory] as an example in this scenario.
+## Praca z Artifactory
+
+Przed przystąpieniem do podpisywania musimy uwierzytelnić się w rejestrze docker. Jako przykład w tym scenariuszu używam rejestru docker Artifactory[^artifactory].
 ```bash
 {% raw %}cosign login -u {{ username }} -p '{{ password }}' x.artifactory.com
 {% endraw %}
 ```
-Cosign could return an error if you provide an URL with the schema:
+Cosign może zwrócić błąd, jeśli podasz URL ze schematem:
 
 ```
 Error: registries must be valid RFC 3986 URI authorities: https://x.artifactory.com
 main.go:74: error during command execution: registries must be valid RFC 3986 URI authorities: https://x.artifactory.com
 ```
-As a solution simply omit the schema (https:// in the above example).
+Rozwiązaniem jest po prostu pominięcie schematu (https:// w powyższym przykładzie).
 
-When cosign has successfully logged in, build and push the image as usual. Afterwards, you should sign your docker image using cosign sign. If you did everything right to this point, executing cosign verify as a sanity check on the same machine will provide the following output:
+Gdy cosign pomyślnie się zaloguje, zbuduj i wypchnij obraz jak zwykle. Następnie powinieneś podpisać swój obraz docker używając cosign sign. Jeśli do tego momentu wszystko zrobiłeś poprawnie, wykonanie cosign verify jako testu na tej samej maszynie da następujący wynik:
 
 ```bash
 $ cosign verify --key cosign.pub x.artifactory.com/fajfer/image:example
@@ -40,20 +42,20 @@ The following checks were performed on these signatures:
 {"Critical":{"Identity":{"docker-reference":""},"Image":{"Docker-manifest-digest":"sha256:87ef60f558bad79beea6425a3b28989f01dd417164150ab3baab98dcbf04def8"},"Type":"cosign container image signature"},"Optional":null}
 ```
 
-You can repeat the command on a different machine to verify that the signature has been successfully uploaded. The output should remain the same and the signature should be visible in the webUI:
+Możesz powtórzyć polecenie na innej maszynie, aby zweryfikować, że sygnatura została pomyślnie przesłana. Wynik powinien być taki sam, a sygnatura powinna być widoczna w interfejsie webowym:
 
-![Cosign signature in Artifactory]({{ '/img/blog/cosign-artifactory/sig.png' }})
+![Sygnatura Cosign w Artifactory]({{ '/img/blog/cosign-artifactory/sig.png' }})
 
-## So what's the problem?
+## Więc jaki jest problem?
 
-As per documentation:
+Zgodnie z dokumentacją:
 
-Cosign documentation @ af555d5
+Dokumentacja Cosign @ af555d5
 ```
-Signatures are stored as separate objects in the OCI registry, with only a weak reference back to the object they "sign". This means this relationship is opaque to the registry, and signatures will not be deleted or garbage-collected when the image is deleted. Similarly, they can easily be copied from one environment to another, but this is not automatic.
+Sygnatury są przechowywane jako osobne obiekty w rejestrze OCI, z jedynie słabym odniesieniem do obiektu, który "podpisują". Oznacza to, że ta relacja jest nieprzezroczysta dla rejestru, a sygnatury nie zostaną usunięte ani odśmiecone po usunięciu obrazu. Podobnie można je łatwo skopiować z jednego środowiska do drugiego, ale nie dzieje się to automatycznie.
 ```
 
-If your artifact lifecycle ends here and images from here are being deployed to production or are available to public then that's it, you're done. Otherwise, if you want to promote your images or copy them somewhere else then you'll notice that while your artifacts are getting promoted to the target repository, their signatures are left intact in the source repository. Which means that if you build and sign artifacts in the repository x, then after promoting it to repository y cosign will give you this sad response:
+Jeśli cykl życia twojego artefaktu kończy się tutaj, a obrazy stąd są wdrażane na produkcję lub są dostępne publicznie, to wszystko, skończyłeś. W przeciwnym razie, jeśli chcesz promować swoje obrazy lub skopiować je gdzieś indziej, zauważysz, że podczas gdy twoje artefakty są promowane do docelowego repozytorium, ich sygnatury pozostają nienaruszone w repozytorium źródłowym. Co oznacza, że jeśli zbudujesz i podpiszesz artefakty w repozytorium x, to po promocji do repozytorium y cosign da ci tę smutną odpowiedź:
 
 ```bash
 $ cosign verify --key cosign.pub y.artifactory.com/fajfer/image:example
@@ -62,15 +64,15 @@ Error: no matching signatures:
 main.go:52: error during command execution: no matching signatures:
 ```
 
-What's wrong, right? It just worked perfectly in the old repository.
+Co jest nie tak, prawda? Przecież właśnie działało idealnie w starym repozytorium.
 
-## The proposed solution
+## Proponowane rozwiązanie
 
-We need to copy the signature to the target repository. After the Promote Docker Image REST API request we need to do a Copy Item request to copy the signature. There's an important detail here - cosign names the signature after SHA256 of manifest.json of our image. Luckily, we can easily access that information by executing File Info request. We can also calculate this ourselves but I assume you don't have the image locally anymore during the promotion/copy phase.
+Musimy skopiować sygnaturę do docelowego repozytorium. Po żądaniu REST API Promote Docker Image musimy wykonać żądanie Copy Item, aby skopiować sygnaturę. Jest tu ważny szczegół - cosign nazywa sygnaturę po SHA256 manifest.json naszego obrazu. Na szczęście możemy łatwo uzyskać dostęp do tych informacji wykonując żądanie File Info. Możemy również obliczyć to sami, ale zakładam, że nie masz już obrazu lokalnie podczas fazy promocji/kopiowania.
 
-![Digest field under 'Docker Info' in the UI also displays the hash]({{ '/img/blog/cosign-artifactory/example.png' }})
+![Pole Digest w sekcji 'Docker Info' w UI również wyświetla hash]({{ '/img/blog/cosign-artifactory/example.png' }})
 
-To understand the solution better and get an idea of how your requests should look like, here's an example in Ansible code that could be used to implement a solution in your CI system:
+Aby lepiej zrozumieć rozwiązanie i uzyskać pojęcie o tym, jak powinny wyglądać twoje żądania, oto przykład w kodzie Ansible, który mógłby zostać użyty do implementacji rozwiązania w twoim systemie CI:
 
 ```yaml
 {% raw %}- name: Promote Docker Image
@@ -111,18 +113,18 @@ To understand the solution better and get an idea of how your requests should lo
 {% endraw %}
 ```
 
-This approach makes the best use of Artifactory's API and doesn't require the image and signature to be downloaded locally at all.
+To podejście najlepiej wykorzystuje API Artifactory i nie wymaga wcale pobierania obrazu i sygnatury lokalnie.
 
-## Closing thoughts
+## Podsumowanie
 
-Cosign support of Artifactory is very well done and the Artifactory knows that it serves you signed images as it sends you a signature along with the container after executing docker pull. The API doesn't reflect that though, but that's hopefully going to change in the future. Container signing becomes more popular and more accessible thanks to tools like cosign, notary and kyverno to name a few so doing workarounds like this shouldn't be required in the future.
+Wsparcie Cosign dla Artifactory jest bardzo dobrze zrealizowane, a Artifactory wie, że serwuje podpisane obrazy, ponieważ wysyła sygnaturę wraz z kontenerem po wykonaniu docker pull. API tego jednak nie odzwierciedla, ale miejmy nadzieję, że zmieni się to w przyszłości. Podpisywanie kontenerów staje się coraz bardziej popularne i dostępne dzięki narzędziom takim jak cosign, notary i kyverno, żeby wymienić tylko kilka, więc wykonywanie obejść takich jak to nie powinno być wymagane w przyszłości.
 
-[^signing]: Jabar Asadi, "Digital Signature With Cosign" May 4, 2023. https://eng.d2iq.com/blog/digital-signature-with-cosign/ Accessed 22.07.2023
+[^signing]: Jabar Asadi, "Digital Signature With Cosign" 4 maja 2023. https://eng.d2iq.com/blog/digital-signature-with-cosign/ Dostęp 22.07.2023
 
 [^docs-signing]: Sigstore, "Signing Containers" https://docs.sigstore.dev/cosign/signing_with_containers/ GitHub: 18b11e2
 
 [^docs-verifying]: Sigstore, "Verifying" https://docs.sigstore.dev/cosign/verify GitHub: 4186c93
 
-[^artifactory]: JFrog Artifactory Documentation, "Docker Registry" https://jfrog.com/help/r/jfrog-artifactory-documentation/docker-registry Accessed: 23.07.2023
+[^artifactory]: JFrog Artifactory Documentation, "Docker Registry" https://jfrog.com/help/r/jfrog-artifactory-documentation/docker-registry Dostęp: 23.07.2023
 
 <meta name="fediverse:creator" content="@fajfer@mastodon.social">
