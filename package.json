@@ -21,7 +21,7 @@
     },
     "scripts": {
         "watch:sass": "sass --watch src/sass src/css",
-        "watch:eleventy": "eleventy --serve",
+        "watch:eleventy": "NODE_ENV=development eleventy --serve",
         "build:sass": "sass src/sass src/css",
         "build:eleventy": "eleventy",
         "dev": "npm-run-all build:sass --parallel watch:*",
