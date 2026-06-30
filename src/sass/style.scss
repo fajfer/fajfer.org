@@ -298,6 +298,13 @@ body > footer {
    BLOG LIST
    ============================================================ */
 
+.blog-intro {
+    padding: 2rem 0 0;
+    font-size: 2em;
+    color: var(--text-muted, inherit);
+    opacity: 0.8;
+}
+
 .blog-list {
     display: flex;
     flex-direction: column;

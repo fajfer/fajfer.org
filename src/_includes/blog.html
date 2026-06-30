@@ -1,4 +1,11 @@
 <div class="container">
+    <p class="blog-intro">
+        {% if lang == "pl" %}
+        Strona domowa Damiana Fajfera
+        {% else %}
+        Damian Fajfer's home page
+        {% endif %}
+    </p>
     <div class="blog-list">
         {% for post in collections.post | reverse %}
         {% if post.data.lang == lang %}
