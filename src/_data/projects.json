@@ -1,41 +1,59 @@
 [
   {
-    "tab": "Community",
+    "tab": {
+      "en": "Projects",
+      "pl": "Projekty"
+    },
     "items": [
       {
-        "name": "Nightscout & Free Software for Healthcare",
-        "description": {
-          "en": "Presentation and advocacy around Nightscout — an open-source continuous glucose monitoring system — as an example of free software improving lives in healthcare.",
-          "pl": "Prezentacja i propagowanie Nightscout — otwartego systemu ciągłego monitorowania glukozy — jako przykładu wolnego oprogramowania poprawiającego życie w ochronie zdrowia."
+        "name": {
+          "en": "SPOIWO - Alliance of Friends of Open and Free Software",
+          "pl": "SPOIWO - Sojusz Przyjaciół Otwartego i Wolnego Oprogramowania"
         },
-        "url": null,
-        "tags": ["Free Software", "Healthcare", "Open Source"]
-      },
-      {
-        "name": "SPOIWO — Digital Sovereignty Advocacy",
         "description": {
-          "en": "Community education and advocacy work through SPOIWO (Alliance of Friends of Open and Free Software) on topics of digital sovereignty, open source adoption, and software freedom.",
-          "pl": "Edukacja społeczności i działalność rzecznicza w ramach SPOIWO (Sojusz Przyjaciół Otwartego i Wolnego Oprogramowania) w zakresie suwerenności cyfrowej, adopcji otwartego oprogramowania i wolności oprogramowania."
+          "en": "Response to the growing monopolization of digital services, the dependence of public institutions and communities on closed technological platforms, and the ongoing loss of control over data, communication, and essential social infrastructure.",
+          "pl": "Odpowiedź na rosnącą monopolizację usług cyfrowych, uzależnienie instytucji publicznych i społeczności od zamkniętych platform technologicznych oraz postępującą utratę kontroli nad danymi, komunikacją i podstawową infrastrukturą społeczną."
         },
-        "url": null,
+        "url": "https://spoiwo.tech/",
         "tags": ["Digital Sovereignty", "Free Software", "Advocacy"]
       },
       {
-        "name": "Jesteśmy Blisko",
+        "name": {
+          "en": "Safe with the Bison",
+          "pl": "Bezpiecznie z Żubrem"
+        },
         "description": {
           "en": "Civic initiative running from 2020 to 2023 focused on local community engagement and social responsibility.",
-          "pl": "Inicjatywa obywatelska działająca w latach 2020–2023, skupiona na lokalnym zaangażowaniu społeczności i odpowiedzialności społecznej."
+          "pl": "Organizacja treningów Krav Magi oraz szkolenia z bezpieczeństwa w sieci. Grant Fundacji Banku Pekao S.A. \"Jesteśmy Blisko\" z 2021 roku."
+        },
+        "url": "/pl/blog/bezpiecznie-z-zubrem",
+        "tags": ["Community", "Grant", "Jesteśmy Blisko"]
+      },
+      {
+        "name": {
+          "en": "Poznań Free Software Fest",
+          "pl": "Poznańska Impreza Wolnego Oprogramowania"
+        },
+        "description": {
+          "en": "",
+          "pl": "Od 2017 jestem "
         },
         "url": null,
-        "tags": ["Civic", "Community", "CSR"]
+        "tags": ["Civic", "Community", "Grant"]
       }
     ]
   },
   {
-    "tab": "GitHub",
+    "tab": {
+      "en": "Software",
+      "pl": "Oprogramowanie"
+    },
     "items": [
       {
-        "name": "fajfer.org",
+        "name": {
+          "en": "fajfer.org",
+          "pl": "fajfer.org"
+        },
         "description": {
           "en": "Personal website and blog built with Eleventy, featuring bilingual content on DevOps, homelab, and free software.",
           "pl": "Strona osobista i blog zbudowany z Eleventy, zawierający dwujęzyczne treści o DevOps, homelabcie i wolnym oprogramowaniu."

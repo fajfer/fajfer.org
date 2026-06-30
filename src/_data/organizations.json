@@ -1,9 +1,15 @@
 [
   {
-    "tab": "Free Software",
+    "tab": {
+      "en": "Free Software",
+      "pl": "Wolne Oprogramowanie"
+    },
     "items": [
       {
-        "name": "Free Software Foundation Europe (FSFE)",
+        "name": {
+          "en": "Free Software Foundation Europe (FSFE)",
+          "pl": "Free Software Foundation Europe (FSFE)"
+        },
         "role": { "en": "Core Team Member & Poland Coordinator", "pl": "Członek Core Team i Koordynator Polska" },
         "description": {
           "en": "FSFE is a non-profit organisation that empowers users to control technology by promoting free software. As Poland Coordinator, involved in local advocacy, events, and community building.",
@@ -13,7 +19,10 @@
         "logo": null
       },
       {
-        "name": "Reszka Free Software Foundation",
+        "name": {
+          "en": "Reszka Free Software Foundation",
+          "pl": "Reszka Free Software Foundation"
+        },
         "role": { "en": "President", "pl": "Prezes" },
         "description": {
           "en": "Local free software foundation promoting digital rights and software freedom.",
@@ -23,7 +32,10 @@
         "logo": null
       },
       {
-        "name": "SPOIWO",
+        "name": {
+          "en": "SPOIWO",
+          "pl": "SPOIWO"
+        },
         "role": { "en": "Member", "pl": "Członek" },
         "description": {
           "en": "Alliance of Friends of Open and Free Software — advocating for open source, digital sovereignty, and software freedom.",
@@ -35,10 +47,16 @@
     ]
   },
   {
-    "tab": "Community",
+    "tab": {
+      "en": "Community",
+      "pl": "Społeczność"
+    },
     "items": [
       {
-        "name": "Polish Linux Users Group (PLUG)",
+        "name": {
+          "en": "Polish Linux Users Group (PLUG)",
+          "pl": "Polska Grupa Użytkowników Linuksa (PLUG)"
+        },
         "role": { "en": "Secretary", "pl": "Sekretarz" },
         "description": {
           "en": "One of the oldest Linux user groups in Poland, bringing together enthusiasts and professionals around open source and Linux.",
@@ -48,7 +66,10 @@
         "logo": null
       },
       {
-        "name": "P.I.W.O.",
+        "name": {
+          "en": "P.I.W.O.",
+          "pl": "P.I.W.O."
+        },
         "role": { "en": "Organizer", "pl": "Organizator" },
         "description": {
           "en": "Community initiative organizing regular meetups around free software, open source, and digital freedom topics.",
