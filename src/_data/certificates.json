@@ -3,72 +3,72 @@
     "tab": "Azure",
     "items": [
       {
-        "name": "AZ-900: Azure Fundamentals",
-        "issuer": "Microsoft",
-        "year": "2023",
-        "image": "/img/certs/az-900.png",
-        "url": null
+        "name": "Azure Solutions Architect Expert",
+        "issuer": "AZ-305",
+        "year": "2023 - 2027",
+        "image": "/img/certs/ms-expert.png",
+        "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/1FD8CFA337181961?sharingId=F6AABA649AFD55D9"
       },
       {
-        "name": "AZ-104: Azure Administrator Associate",
-        "issuer": "Microsoft",
-        "year": "2023",
-        "image": "/img/certs/az-104.png",
-        "url": null
+        "name": "Azure AI Engineer Associate",
+        "issuer": "AI-102",
+        "year": "2024 - 2027",
+        "image": "/img/certs/ms-associate.png",
+        "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/F38F4CD7AF232088?sharingId=F6AABA649AFD55D9"
       },
       {
-        "name": "AZ-305: Azure Solutions Architect Expert",
-        "issuer": "Microsoft",
+        "name": "Azure Administrator Associate",
+        "issuer": "AZ-104",
+        "year": "2023 - 2027",
+        "image": "/img/certs/ms-associate.png",
+        "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/7129E33161C00539?sharingId=F6AABA649AFD55D9"
+      },
+      {
+        "name": "OpenHack: Security, Compliance, and Identity",
+        "issuer": "Microsoft OpenHack",
         "year": "2023",
-        "image": "/img/certs/az-305.png",
-        "url": null
+        "image": "/img/certs/openhack.png",
+        "url": "https://www.credly.com/badges/3a35252a-e650-4ba6-9b0f-925060ca89e2/public_url"
+      },
+      {
+        "name": "Azure AI Fundamentals",
+        "issuer": "AI-900",
+        "year": "2023",
+        "image": "/img/certs/ms-fundamentals.png",
+        "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/7E870BD877D50145?sharingId=F6AABA649AFD55D9"
+      },
+      {
+        "name": "Security, Compliance, and Identity Fundamentals",
+        "issuer": "SC-900",
+        "year": "2023",
+        "image": "/img/certs/ms-fundamentals.png",
+        "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/375F99CC4A3EBA7D?sharingId=F6AABA649AFD55D9"
+      },      
+      {
+        "name": "Azure Data Fundamentals",
+        "issuer": "DP-900",
+        "year": "2023",
+        "image": "/img/certs/ms-fundamentals.png",
+        "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/8728882074220947?sharingId=F6AABA649AFD55D9"
+      },
+      {
+        "name": "Azure Fundamentals",
+        "issuer": "AZ-900",
+        "year": "2019",
+        "image": "/img/certs/ms-fundamentals.png",
+        "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/DF013F49CBB37FD5?sharingId=F6AABA649AFD55D9"
       }
     ]
   },
   {
-    "tab": "Microsoft",
+    "tab": "Cybersecurity",
     "items": [
       {
-        "name": "MS-900: Microsoft 365 Fundamentals",
-        "issuer": "Microsoft",
-        "year": "2023",
-        "image": "/img/certs/ms-900.png",
-        "url": null
-      },
-      {
-        "name": "AI-900: Azure AI Fundamentals",
-        "issuer": "Microsoft",
-        "year": "2023",
-        "image": "/img/certs/ai-900.png",
-        "url": null
-      },
-      {
-        "name": "DP-900: Azure Data Fundamentals",
-        "issuer": "Microsoft",
-        "year": "2023",
-        "image": "/img/certs/dp-900.png",
-        "url": null
-      },
-      {
-        "name": "PL-900: Power Platform Fundamentals",
-        "issuer": "Microsoft",
-        "year": "2023",
-        "image": "/img/certs/pl-900.png",
-        "url": null
-      },
-      {
-        "name": "SC-900: Security, Compliance, and Identity Fundamentals",
-        "issuer": "Microsoft",
-        "year": "2023",
-        "image": "/img/certs/sc-900.png",
-        "url": null
-      },
-      {
-        "name": "PL-300: Power BI Data Analyst Associate",
-        "issuer": "Microsoft",
-        "year": "2023",
-        "image": "/img/certs/pl-300.png",
-        "url": null
+        "name": "ISO/IEC 27001:2017-06 Internal Auditor",
+        "issuer": "Polskie Centrum Badań i Certyfikacji",
+        "year": "2020",
+        "image": "/img/certs/pcbc.png",
+        "url": "https://www.pcbc.gov.pl"
       }
     ]
   },
@@ -76,23 +76,72 @@
     "tab": "Kubernetes",
     "items": [
       {
-        "name": "Certified Kubernetes Administrator (CKA)",
-        "issuer": "Cloud Native Computing Foundation",
-        "year": "2023",
+        "name": "CKA: Certified Kubernetes Administrator",
+        "issuer": "The Linux Foundation",
+        "year": "2025 - 2027",
         "image": "/img/certs/cka.png",
-        "url": null
+        "url": "https://www.credly.com/badges/d15cd2f5-1c7e-433c-bf41-6487760dda32/public_url"
+      },
+      {
+        "name": "KCSA: Kubernetes and Cloud Native Security Associate",
+        "issuer": "The Linux Foundation",
+        "year": "2026 - 2028",
+        "image": "/img/certs/kcsa.png",
+        "url": "https://www.credly.com/badges/91542018-ae5d-4bc1-96d0-b3aab752c8b4/public_url"
+      },
+      {
+        "name": "KCNA: Kubernetes and Cloud Native Associate",
+        "issuer": "The Linux Foundation",
+        "year": "2026 - 2028",
+        "image": "/img/certs/kcna.png",
+        "url": "https://www.credly.com/badges/f4b36a46-4495-4b5b-bbe4-94bd7e070139/public_url"
       }
     ]
   },
   {
-    "tab": "Security",
+    "tab": "Microsoft",
     "items": [
       {
-        "name": "ISO/IEC 27001:2017 Internal Auditor",
-        "issuer": "ISO",
-        "year": "2020",
-        "image": "/img/certs/iso-27001.png",
-        "url": null
+        "name": "Power BI Data Analyst Associate",
+        "issuer": "PL-300",
+        "year": "2023 - 2027",
+        "image": "/img/certs/ms-associate.png",
+        "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/C8B5E081C5DD0E37?sharingId=F6AABA649AFD55D9"
+      },
+      {
+        "name": "GitHub Foundations",
+        "issuer": "GitHub",
+        "year": "2024 - 2027",
+        "image": "/img/certs/gh-foundations.png",
+        "url": "https://www.credly.com/badges/a1c2c1b6-5146-4c5f-a11b-3f345010d3f1/public_url"
+      },
+      {
+        "name": "AI Transformation Leader",
+        "issuer": "AB-731",
+        "year": "2026",
+        "image": "/img/certs/ai-transformation-leader.png",
+        "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/53F90357F0DF0F98?sharingId=F6AABA649AFD55D9"
+      },
+      {
+        "name": "Copilot and Agent Administration Fundamentals",
+        "issuer": "AB-900",
+        "year": "2026",
+        "image": "/img/certs/ms-fundamentals.png",
+        "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/8AF33FAAB9167A72?sharingId=F6AABA649AFD55D9"
+      },
+      {
+        "name": "Microsoft 365 Fundamentals",
+        "issuer": "MS-900",
+        "year": "2023",
+        "image": "/img/certs/ms-fundamentals.png",
+        "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/430F099F535113C3?sharingId=F6AABA649AFD55D9"
+      },
+      {
+        "name": "Power Platform Fundamentals",
+        "issuer": "PL-900",
+        "year": "2023",
+        "image": "/img/certs/ms-fundamentals.png",
+        "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/70782C5521A89BF7?sharingId=F6AABA649AFD55D9"
       }
     ]
   }

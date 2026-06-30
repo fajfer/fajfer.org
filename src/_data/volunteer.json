@@ -1,6 +1,6 @@
 [
   {
-    "title": { "en": "Core Team Member & Poland Coordinator", "pl": "Członek Core Team i Koordynator Polska" },
+    "title": { "en": "Core Team Member & Poland Coordinator", "pl": "Członek Core Team i Koordynator na Polskę" },
     "organization": "Free Software Foundation Europe (FSFE)",
     "organizationUrl": "https://fsfe.org",
     "period": { "en": "Jan 2018 – Present", "pl": "Sty 2018 – Teraz" },
@@ -8,67 +8,55 @@
       "en": "Coordinating FSFE activities in Poland, advocating for free software and digital rights, organizing local events and community outreach.",
       "pl": "Koordynowanie działań FSFE w Polsce, propagowanie wolnego oprogramowania i praw cyfrowych, organizowanie lokalnych wydarzeń i działań społecznościowych."
     },
-    "image": null,
+    "image": "img/fsfe.png",
     "tags": ["Free Software", "Community", "Advocacy"]
-  },
-  {
-    "title": { "en": "Organizer", "pl": "Organizator" },
-    "organization": "P.I.W.O.",
-    "organizationUrl": null,
-    "period": { "en": "Feb 2017 – Present", "pl": "Lut 2017 – Teraz" },
-    "description": {
-      "en": "Organizing community meetings and events focused on free software, open source, and digital freedom.",
-      "pl": "Organizowanie spotkań i wydarzeń społecznościowych poświęconych wolnemu oprogramowaniu, otwartemu kodowi źródłowemu i swobodzie cyfrowej."
-    },
-    "image": null,
-    "tags": ["Free Software", "Community", "Events"]
   },
   {
     "title": { "en": "Volunteer Leader", "pl": "Lider Wolontariatu" },
     "organization": "Bank Pekao S.A.",
     "organizationUrl": "https://www.pekao.com.pl",
-    "period": { "en": "Sep 2020 – Mar 2026", "pl": "Wrz 2020 – Mar 2026" },
+    "period": { "en": "Sep 2020 – Present", "pl": "Wrz 2020 – Teraz" },
     "description": {
-      "en": "Led corporate volunteering initiatives, coordinating volunteer programs and social responsibility activities.",
+      "en": "Leading corporate volunteering initiatives, coordinating volunteer programs and social responsibility activities.",
       "pl": "Prowadzenie inicjatyw wolontariatu korporacyjnego, koordynowanie programów wolontariackich i działań społecznej odpowiedzialności."
     },
-    "image": null,
-    "tags": ["Corporate Volunteering", "CSR", "Leadership"]
-  },
-  {
-    "title": { "en": "Secretary", "pl": "Sekretarz" },
-    "organization": "Polish Linux Users Group (PLUG)",
-    "organizationUrl": null,
-    "period": { "en": "Oct 2024 – Present", "pl": "Paź 2024 – Teraz" },
-    "description": {
-      "en": "Managing organizational activities of the Polish Linux Users Group, supporting community coordination and events.",
-      "pl": "Zarządzanie działalnością organizacyjną Polskiej Grupy Użytkowników Linuksa, wspieranie koordynacji społeczności i wydarzeń."
-    },
-    "image": null,
-    "tags": ["Linux", "Community", "Open Source"]
-  },
-  {
-    "title": { "en": "President", "pl": "Prezes" },
-    "organization": "Reszka Free Software Foundation",
-    "organizationUrl": null,
-    "period": { "en": "Oct 2024 – Present", "pl": "Paź 2024 – Teraz" },
-    "description": {
-      "en": "Leading the Reszka Free Software Foundation, promoting free software and digital rights in the local community.",
-      "pl": "Kierowanie Fundacją Wolnego Oprogramowania Reszka, promowanie wolnego oprogramowania i praw cyfrowych w lokalnej społeczności."
-    },
-    "image": null,
-    "tags": ["Free Software", "Foundation", "Leadership"]
+    "image": "img/pekao.jpeg",
+    "tags": ["Corporate Volunteering"]
   },
   {
     "title": { "en": "Watchdog", "pl": "Obserwator" },
-    "organization": "ENISA European Cybersecurity Challenge",
+    "organization": "European Cybersecurity Challenge",
     "organizationUrl": "https://ecsc.eu",
     "period": { "en": "Oct 2025", "pl": "Paź 2025" },
     "description": {
       "en": "Served as a watchdog at the ENISA European Cybersecurity Challenge, supporting the integrity and fair conduct of the competition.",
       "pl": "Pełnienie roli obserwatora na Europejskim Wyzwaniu Cyberbezpieczeństwa ENISA, wspieranie integralności i rzetelnego przebiegu zawodów."
     },
-    "image": null,
-    "tags": ["Cybersecurity", "CTF", "ENISA"]
+    "image": "img/ecsc.png",
+    "tags": ["Cybersecurity", "CTF", "Youth"]
+  },
+  {
+    "title": { "en": "Staff Member", "pl": "Członek Sztabu" },
+    "organization": "Wielka Orkiestra Świątecznej Pomocy (WOŚP)",
+    "organizationUrl": "https://www.wosp.org.pl",
+    "period": { "en": "Oct 2016 - Jan 2017", "pl": "Paź 2016 - Sty 2017" },
+    "description": {
+      "en": "Served as a staff member at WOŚP, conducting online auctions and counting collected funds.",
+      "pl": "Pełnienie roli członka sztabu podczas WOŚP, prowadzenie aukcji internetowych i liczenie zebranych środków."
+    },
+    "image": "img/wosp.jpg",
+    "tags": ["Community"]
+  },
+  {
+    "title": { "en": "Certified Judge", "pl": "Certyfikowany Sędzia" },
+    "organization": "Magic the Gathering",
+    "organizationUrl": "https://magic.wizards.com",
+    "period": { "en": "Mar 2014 - May 2016", "pl": "Mar 2014 - Maj 2016" },
+    "description": {
+      "en": "Local community founder, judging international, competitive events in Poland and Lithuania.",
+      "pl": "Założyciel lokalnej społeczności, sędziowanie międzynarodowych turniejów w Polsce i na Litwie."
+    },
+    "image": "img/mtg.png",
+    "tags": ["Community"]
   }
 ]
