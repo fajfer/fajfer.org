@@ -5,10 +5,6 @@
     "companyUrl": "https://www.pekao.com.pl",
     "period": { "en": "Jun 2020 – Present", "pl": "Cze 2020 – Teraz" },
     "location": "Warsaw, Poland",
-    "description": {
-      "en": "Designs security into software development lifecycles and platforms, integrating security practices throughout the technology infrastructure.",
-      "pl": "Projektowanie bezpieczeństwa w cyklu życia oprogramowania i platform, integracja praktyk bezpieczeństwa w całej infrastrukturze technologicznej."
-    },
     "image": "pekao.jpeg",
     "tags": ["Cloud", "Cybersecurity", "DevOps", "Platform Engineering"]
   },
