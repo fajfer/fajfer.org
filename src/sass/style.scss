@@ -785,6 +785,44 @@ article.container {
     }
 }
 
+.grid-item-hidden {
+    display: none !important;
+}
+
+.show-more-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px dashed var(--color-lightGrey);
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    transition: border-color 0.15s;
+
+    &:hover, &:focus-visible {
+        border-color: var(--color-primary);
+        outline: none;
+
+        .show-more-count,
+        .show-more-text { color: var(--color-primary); }
+    }
+
+    .show-more-count {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 0.3rem;
+    }
+
+    .show-more-text {
+        font-size: 1.3rem;
+        font-family: var(--font-family-mono);
+        color: var(--color-grey);
+    }
+}
+
 /* Talks */
 .talk-list {
     display: grid;

@@ -20,26 +20,13 @@
       },
       {
         "name": {
-          "en": "Reszka Free Software Foundation",
-          "pl": "Reszka Free Software Foundation"
+          "en": "Fundacja Wolnego Oprogramowania Reszka",
+          "pl": "Fundacja Wolnego Oprogramowania Reszka"
         },
         "role": { "en": "President", "pl": "Prezes" },
         "description": {
           "en": "Local free software foundation promoting digital rights and software freedom.",
           "pl": "Lokalna fundacja wolnego oprogramowania promująca prawa cyfrowe i wolność oprogramowania."
-        },
-        "url": null,
-        "logo": null
-      },
-      {
-        "name": {
-          "en": "SPOIWO",
-          "pl": "SPOIWO"
-        },
-        "role": { "en": "Member", "pl": "Członek" },
-        "description": {
-          "en": "Alliance of Friends of Open and Free Software — advocating for open source, digital sovereignty, and software freedom.",
-          "pl": "Sojusz Przyjaciół Otwartego i Wolnego Oprogramowania — działania na rzecz otwartego oprogramowania, suwerenności cyfrowej i wolności oprogramowania."
         },
         "url": null,
         "logo": null

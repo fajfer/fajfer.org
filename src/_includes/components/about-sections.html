@@ -152,7 +152,7 @@
             {% for group in certificates %}
             <div class="tab-panel{% if not loop.first %} hidden{% endif %}"
                  data-panel="cert-{{ loop.index0 }}" role="tabpanel">
-                <div class="badge-grid">
+                <div class="badge-grid" data-more="{{ showMore }}">
                     {% for cert in group.items %}
                     <div class="badge-item">
                         {% if cert.url %}
@@ -189,7 +189,7 @@
             {% for group in projects %}
             <div class="tab-panel{% if not loop.first %} hidden{% endif %}"
                  data-panel="proj-{{ loop.index0 }}" role="tabpanel">
-                <div class="project-grid">
+                <div class="project-grid" data-more="{{ showMore }}">
                     {% for project in group.items %}
                     <div class="project-card">
                         <h3>{{ project.name[lang] }}</h3>
@@ -294,6 +294,76 @@
 
 <script>
 (function () {
+    function collapseGrid(grid) {
+        if (grid.dataset.gridExpanded) return; // user expanded — don't re-collapse
+        if (!grid.offsetWidth) return;          // skip hidden panels
+
+        var sel = grid.classList.contains('badge-grid') ? '.badge-item' : '.project-card';
+
+        // Remove old show-more BEFORE querying items — it shares the same class
+        // and would inflate items.length, making hiddenCount wrong
+        var existing = grid.querySelector('.show-more-item');
+        if (existing) existing.remove();
+
+        var items = Array.from(grid.querySelectorAll(sel));
+        if (items.length < 2) return;
+
+        items.forEach(function (item) { item.classList.remove('grid-item-hidden'); });
+
+        // Detect which items sit in the first row
+        var firstTop = items[0].getBoundingClientRect().top;
+        var firstRowCount = items.filter(function (item) {
+            return Math.abs(item.getBoundingClientRect().top - firstTop) < 5;
+        }).length;
+
+        if (firstRowCount >= items.length) return; // everything already fits in one row
+
+        var visibleCount = Math.max(firstRowCount - 1, 1);
+        var hiddenCount  = items.length - visibleCount;
+        var moreLabel    = grid.dataset.more || 'more';
+
+        items.slice(visibleCount).forEach(function (item) {
+            item.classList.add('grid-item-hidden');
+        });
+
+        var showMore = document.createElement('div');
+        showMore.className = sel.slice(1) + ' show-more-item';
+        showMore.setAttribute('role', 'button');
+        showMore.setAttribute('tabindex', '0');
+
+        var countEl = document.createElement('span');
+        countEl.className = 'show-more-count';
+        countEl.textContent = '+' + hiddenCount;
+        var textEl = document.createElement('span');
+        textEl.className = 'show-more-text';
+        textEl.textContent = moreLabel;
+        showMore.appendChild(countEl);
+        showMore.appendChild(textEl);
+        grid.appendChild(showMore);
+
+        function expand() {
+            grid.dataset.gridExpanded = '1'; // prevent resize from re-collapsing
+            items.forEach(function (item) { item.classList.remove('grid-item-hidden'); });
+            showMore.remove();
+        }
+
+        showMore.addEventListener('click', expand);
+        showMore.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); expand(); }
+        });
+    }
+
+    function collapseAllVisible() {
+        document.querySelectorAll('.badge-grid, .project-grid').forEach(collapseGrid);
+    }
+
+    // Re-collapse on resize (debounced) so row count stays accurate after reflow
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(collapseAllVisible, 150);
+    });
+
     document.querySelectorAll('.tab-btn').forEach(function (btn) {
         btn.addEventListener('click', function () {
             var tab = btn.dataset.tab;
@@ -307,8 +377,12 @@
             container.querySelectorAll('.tab-panel').forEach(function (p) {
                 p.classList.add('hidden');
             });
-            container.querySelector('[data-panel="' + tab + '"]').classList.remove('hidden');
+            var panel = container.querySelector('[data-panel="' + tab + '"]');
+            panel.classList.remove('hidden');
+            panel.querySelectorAll('.badge-grid, .project-grid').forEach(collapseGrid);
         });
     });
+
+    collapseAllVisible();
 }());
 </script>
