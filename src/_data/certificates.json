@@ -5,15 +5,69 @@
       {
         "name": "AZ-900: Azure Fundamentals",
         "issuer": "Microsoft",
-        "year": "2024",
+        "year": "2023",
         "image": "/img/certs/az-900.png",
         "url": null
       },
       {
-        "name": "AZ-104: Azure Administrator",
+        "name": "AZ-104: Azure Administrator Associate",
         "issuer": "Microsoft",
-        "year": "2024",
+        "year": "2023",
         "image": "/img/certs/az-104.png",
+        "url": null
+      },
+      {
+        "name": "AZ-305: Azure Solutions Architect Expert",
+        "issuer": "Microsoft",
+        "year": "2023",
+        "image": "/img/certs/az-305.png",
+        "url": null
+      }
+    ]
+  },
+  {
+    "tab": "Microsoft",
+    "items": [
+      {
+        "name": "MS-900: Microsoft 365 Fundamentals",
+        "issuer": "Microsoft",
+        "year": "2023",
+        "image": "/img/certs/ms-900.png",
+        "url": null
+      },
+      {
+        "name": "AI-900: Azure AI Fundamentals",
+        "issuer": "Microsoft",
+        "year": "2023",
+        "image": "/img/certs/ai-900.png",
+        "url": null
+      },
+      {
+        "name": "DP-900: Azure Data Fundamentals",
+        "issuer": "Microsoft",
+        "year": "2023",
+        "image": "/img/certs/dp-900.png",
+        "url": null
+      },
+      {
+        "name": "PL-900: Power Platform Fundamentals",
+        "issuer": "Microsoft",
+        "year": "2023",
+        "image": "/img/certs/pl-900.png",
+        "url": null
+      },
+      {
+        "name": "SC-900: Security, Compliance, and Identity Fundamentals",
+        "issuer": "Microsoft",
+        "year": "2023",
+        "image": "/img/certs/sc-900.png",
+        "url": null
+      },
+      {
+        "name": "PL-300: Power BI Data Analyst Associate",
+        "issuer": "Microsoft",
+        "year": "2023",
+        "image": "/img/certs/pl-300.png",
         "url": null
       }
     ]
@@ -26,6 +80,18 @@
         "issuer": "Cloud Native Computing Foundation",
         "year": "2023",
         "image": "/img/certs/cka.png",
+        "url": null
+      }
+    ]
+  },
+  {
+    "tab": "Security",
+    "items": [
+      {
+        "name": "ISO/IEC 27001:2017 Internal Auditor",
+        "issuer": "ISO",
+        "year": "2020",
+        "image": "/img/certs/iso-27001.png",
         "url": null
       }
     ]

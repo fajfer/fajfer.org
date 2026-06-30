@@ -1,14 +1,74 @@
 [
   {
-    "title": { "en": "Volunteer Role Title", "pl": "Tytuł roli wolontaryjnej" },
-    "organization": "Organization Name",
-    "organizationUrl": "https://example.org",
-    "period": { "en": "2021 – Present", "pl": "2021 – Teraz" },
+    "title": { "en": "Core Team Member & Poland Coordinator", "pl": "Członek Core Team i Koordynator Polska" },
+    "organization": "Free Software Foundation Europe (FSFE)",
+    "organizationUrl": "https://fsfe.org",
+    "period": { "en": "Jan 2018 – Present", "pl": "Sty 2018 – Teraz" },
     "description": {
-      "en": "Describe your volunteer contribution here.",
-      "pl": "Opisz swój wkład wolontaryjny tutaj."
+      "en": "Coordinating FSFE activities in Poland, advocating for free software and digital rights, organizing local events and community outreach.",
+      "pl": "Koordynowanie działań FSFE w Polsce, propagowanie wolnego oprogramowania i praw cyfrowych, organizowanie lokalnych wydarzeń i działań społecznościowych."
     },
     "image": null,
-    "tags": ["Community", "Open Source"]
+    "tags": ["Free Software", "Community", "Advocacy"]
+  },
+  {
+    "title": { "en": "Organizer", "pl": "Organizator" },
+    "organization": "P.I.W.O.",
+    "organizationUrl": null,
+    "period": { "en": "Feb 2017 – Present", "pl": "Lut 2017 – Teraz" },
+    "description": {
+      "en": "Organizing community meetings and events focused on free software, open source, and digital freedom.",
+      "pl": "Organizowanie spotkań i wydarzeń społecznościowych poświęconych wolnemu oprogramowaniu, otwartemu kodowi źródłowemu i swobodzie cyfrowej."
+    },
+    "image": null,
+    "tags": ["Free Software", "Community", "Events"]
+  },
+  {
+    "title": { "en": "Volunteer Leader", "pl": "Lider Wolontariatu" },
+    "organization": "Bank Pekao S.A.",
+    "organizationUrl": "https://www.pekao.com.pl",
+    "period": { "en": "Sep 2020 – Mar 2026", "pl": "Wrz 2020 – Mar 2026" },
+    "description": {
+      "en": "Led corporate volunteering initiatives, coordinating volunteer programs and social responsibility activities.",
+      "pl": "Prowadzenie inicjatyw wolontariatu korporacyjnego, koordynowanie programów wolontariackich i działań społecznej odpowiedzialności."
+    },
+    "image": null,
+    "tags": ["Corporate Volunteering", "CSR", "Leadership"]
+  },
+  {
+    "title": { "en": "Secretary", "pl": "Sekretarz" },
+    "organization": "Polish Linux Users Group (PLUG)",
+    "organizationUrl": null,
+    "period": { "en": "Oct 2024 – Present", "pl": "Paź 2024 – Teraz" },
+    "description": {
+      "en": "Managing organizational activities of the Polish Linux Users Group, supporting community coordination and events.",
+      "pl": "Zarządzanie działalnością organizacyjną Polskiej Grupy Użytkowników Linuksa, wspieranie koordynacji społeczności i wydarzeń."
+    },
+    "image": null,
+    "tags": ["Linux", "Community", "Open Source"]
+  },
+  {
+    "title": { "en": "President", "pl": "Prezes" },
+    "organization": "Reszka Free Software Foundation",
+    "organizationUrl": null,
+    "period": { "en": "Oct 2024 – Present", "pl": "Paź 2024 – Teraz" },
+    "description": {
+      "en": "Leading the Reszka Free Software Foundation, promoting free software and digital rights in the local community.",
+      "pl": "Kierowanie Fundacją Wolnego Oprogramowania Reszka, promowanie wolnego oprogramowania i praw cyfrowych w lokalnej społeczności."
+    },
+    "image": null,
+    "tags": ["Free Software", "Foundation", "Leadership"]
+  },
+  {
+    "title": { "en": "Watchdog", "pl": "Obserwator" },
+    "organization": "ENISA European Cybersecurity Challenge",
+    "organizationUrl": "https://ecsc.eu",
+    "period": { "en": "Oct 2025", "pl": "Paź 2025" },
+    "description": {
+      "en": "Served as a watchdog at the ENISA European Cybersecurity Challenge, supporting the integrity and fair conduct of the competition.",
+      "pl": "Pełnienie roli obserwatora na Europejskim Wyzwaniu Cyberbezpieczeństwa ENISA, wspieranie integralności i rzetelnego przebiegu zawodów."
+    },
+    "image": null,
+    "tags": ["Cybersecurity", "CTF", "ENISA"]
   }
 ]

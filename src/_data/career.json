@@ -1,28 +1,15 @@
 [
   {
-    "title": { "en": "Your Most Recent Job Title", "pl": "Twoje ostatnie stanowisko" },
-    "company": "Company Name",
-    "companyUrl": "https://example.com",
-    "period": { "en": "Jan 2022 – Present", "pl": "Sty 2022 – Teraz" },
+    "title": { "en": "Principal Application Security Architect", "pl": "Główny Architekt Bezpieczeństwa Aplikacji" },
+    "company": "Bank Pekao S.A.",
+    "companyUrl": "https://www.pekao.com.pl",
+    "period": { "en": "Jun 2020 – Present", "pl": "Cze 2020 – Teraz" },
     "location": "Warsaw, Poland",
     "description": {
-      "en": "Describe what you did here. Focus on impact — what you shipped, improved, or led.",
-      "pl": "Opisz co tutaj robiłeś. Skupiaj się na efektach — co wdrożyłeś, usprawniłeś lub prowadziłeś."
+      "en": "Designs security into software development lifecycles and platforms, integrating security practices throughout the technology infrastructure.",
+      "pl": "Projektowanie bezpieczeństwa w cyklu życia oprogramowania i platform, integracja praktyk bezpieczeństwa w całej infrastrukturze technologicznej."
     },
     "image": null,
-    "tags": ["DevOps", "Kubernetes", "CI/CD"]
-  },
-  {
-    "title": { "en": "Previous Job Title", "pl": "Poprzednie stanowisko" },
-    "company": "Previous Company",
-    "companyUrl": null,
-    "period": { "en": "Mar 2020 – Dec 2021", "pl": "Mar 2020 – Gru 2021" },
-    "location": "Remote",
-    "description": {
-      "en": "Another role description. Add as many entries as you need.",
-      "pl": "Opis kolejnej roli. Dodaj tyle wpisów ile potrzebujesz."
-    },
-    "image": null,
-    "tags": ["AWS", "Docker", "GitLab CI"]
+    "tags": ["Security", "DevSecOps", "Banking"]
   }
 ]

@@ -1,15 +1,35 @@
 [
   {
-    "tab": "Technical",
+    "tab": "Free Software",
     "items": [
       {
-        "name": "Organization Name",
+        "name": "Free Software Foundation Europe (FSFE)",
+        "role": { "en": "Core Team Member & Poland Coordinator", "pl": "Członek Core Team i Koordynator Polska" },
+        "description": {
+          "en": "FSFE is a non-profit organisation that empowers users to control technology by promoting free software. As Poland Coordinator, involved in local advocacy, events, and community building.",
+          "pl": "FSFE to organizacja non-profit, która dba o to, by użytkownicy mogli kontrolować technologię poprzez promocję wolnego oprogramowania. Jako Koordynator Polski, zaangażowany w lokalną działalność, wydarzenia i budowanie społeczności."
+        },
+        "url": "https://fsfe.org",
+        "logo": null
+      },
+      {
+        "name": "Reszka Free Software Foundation",
+        "role": { "en": "President", "pl": "Prezes" },
+        "description": {
+          "en": "Local free software foundation promoting digital rights and software freedom.",
+          "pl": "Lokalna fundacja wolnego oprogramowania promująca prawa cyfrowe i wolność oprogramowania."
+        },
+        "url": null,
+        "logo": null
+      },
+      {
+        "name": "SPOIWO",
         "role": { "en": "Member", "pl": "Członek" },
         "description": {
-          "en": "Describe what you do or contribute within this organization.",
-          "pl": "Opisz co robisz lub do czego się przyczyniasz w tej organizacji."
+          "en": "Alliance of Friends of Open and Free Software — advocating for open source, digital sovereignty, and software freedom.",
+          "pl": "Sojusz Przyjaciół Otwartego i Wolnego Oprogramowania — działania na rzecz otwartego oprogramowania, suwerenności cyfrowej i wolności oprogramowania."
         },
-        "url": "https://example.org",
+        "url": null,
         "logo": null
       }
     ]
@@ -18,11 +38,21 @@
     "tab": "Community",
     "items": [
       {
-        "name": "Another Organization",
-        "role": { "en": "Contributor", "pl": "Kontrybutor" },
+        "name": "Polish Linux Users Group (PLUG)",
+        "role": { "en": "Secretary", "pl": "Sekretarz" },
         "description": {
-          "en": "Another organization description.",
-          "pl": "Opis kolejnej organizacji."
+          "en": "One of the oldest Linux user groups in Poland, bringing together enthusiasts and professionals around open source and Linux.",
+          "pl": "Jedna z najstarszych grup użytkowników Linuksa w Polsce, skupiająca entuzjastów i profesjonalistów wokół otwartego oprogramowania i Linuksa."
+        },
+        "url": null,
+        "logo": null
+      },
+      {
+        "name": "P.I.W.O.",
+        "role": { "en": "Organizer", "pl": "Organizator" },
+        "description": {
+          "en": "Community initiative organizing regular meetups around free software, open source, and digital freedom topics.",
+          "pl": "Inicjatywa społecznościowa organizująca regularne spotkania poświęcone tematyce wolnego oprogramowania, otwartego kodu źródłowego i swobód cyfrowych."
         },
         "url": null,
         "logo": null
