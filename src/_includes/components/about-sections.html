@@ -3,7 +3,7 @@
 
     <!-- Hero -->
     <section class="about-hero">
-        <img src="{{ '/img/profile.svg' | url }}" alt="{{ data.author }}" class="about-avatar">
+        <img src="{{ '/img/damian.jpeg' | url }}" alt="{{ data.author }}" class="about-avatar">
         <div class="about-hero-text">
             <h1>{{ data.author }}</h1>
             <p>{{ aboutDamian }}</p>
@@ -54,8 +54,8 @@
                         <p class="timeline-desc">{{ job.description[lang] }}</p>
                         {% endif %}
                         {% if job.tags %}
-                        <div class="tags">
-                            {% for tag in job.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+                        <div class="about-tags">
+                            {% for tag in job.tags %}<span class="about-tag">{{ tag }}</span>{% endfor %}
                         </div>
                         {% endif %}
                     </div>
@@ -87,8 +87,8 @@
                         <p class="timeline-desc">{{ pos.description[lang] }}</p>
                         {% endif %}
                         {% if pos.tags %}
-                        <div class="tags">
-                            {% for tag in pos.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+                        <div class="about-tags">
+                            {% for tag in pos.tags %}<span class="about-tag">{{ tag }}</span>{% endfor %}
                         </div>
                         {% endif %}
                     </div>
@@ -157,8 +157,8 @@
                         <h3>{{ project.name }}</h3>
                         <p>{{ project.description[lang] }}</p>
                         {% if project.tags %}
-                        <div class="tags">
-                            {% for tag in project.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+                        <div class="about-tags">
+                            {% for tag in project.tags %}<span class="about-tag">{{ tag }}</span>{% endfor %}
                         </div>
                         {% endif %}
                         {% if project.url %}
