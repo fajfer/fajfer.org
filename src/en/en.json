@@ -18,5 +18,8 @@
     "certificatesSection": "Certificates",
     "projectsSection": "Projects",
     "organizationsSection": "Organizations",
-    "viewProject": "View project"
+    "talksSection": "Talks",
+    "viewProject": "View project",
+    "viewSlides": "Slides",
+    "watchVideo": "Video"
 }

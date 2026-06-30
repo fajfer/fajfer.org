@@ -785,6 +785,78 @@ article.container {
     }
 }
 
+/* Talks */
+.talk-list {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.talk-card {
+    border: 1px solid var(--color-lightGrey);
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: var(--bg-secondary-color);
+    transition: border-color 0.15s;
+
+    &:hover { border-color: var(--color-grey); }
+
+    h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 0;
+        color: var(--color-grey);
+        line-height: 1.5;
+        font-size: 1.4rem;
+    }
+
+    .talk-meta {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+
+    .talk-event {
+        font-family: var(--font-family-mono);
+        font-size: 1.2rem;
+        color: var(--color-primary);
+        font-weight: 500;
+    }
+
+    .talk-year {
+        font-family: var(--font-family-mono);
+        font-size: 1.2rem;
+        color: var(--color-grey);
+
+        &::before { content: "·  "; }
+    }
+
+    .talk-links {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: auto;
+        padding-top: 0.5rem;
+
+        a {
+            font-family: var(--font-family-mono);
+            font-size: 1.3rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 500;
+
+            &:hover { text-decoration: underline; }
+        }
+    }
+}
+
 /* Organizations */
 .org-list {
     display: grid;

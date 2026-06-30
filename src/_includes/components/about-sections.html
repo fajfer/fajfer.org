@@ -15,6 +15,7 @@
         <a href="{{ page.url }}#experience">{{ experienceSection }}</a>
         <a href="{{ page.url }}#certificates">{{ certificatesSection }}</a>
         <a href="{{ page.url }}#projects">{{ projectsSection }}</a>
+        <a href="{{ page.url }}#talks">{{ talksSection }}</a>
         <a href="{{ page.url }}#organizations">{{ organizationsSection }}</a>
     </nav>
 
@@ -206,6 +207,40 @@
                     </div>
                     {% endfor %}
                 </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Talks -->
+    <section id="talks" class="about-section">
+        <h2>{{ talksSection }}</h2>
+        <div class="talk-list">
+            {% for talk in talks %}
+            <div class="talk-card">
+                <div class="talk-meta">
+                    <span class="talk-event">{{ talk.event }}</span>
+                    <span class="talk-year">{{ talk.year }}</span>
+                </div>
+                <h3>{{ talk.title[lang] }}</h3>
+                {% if talk.description %}
+                <p>{{ talk.description[lang] }}</p>
+                {% endif %}
+                {% if talk.tags %}
+                <div class="about-tags">
+                    {% for tag in talk.tags %}<span class="about-tag">{{ tag }}</span>{% endfor %}
+                </div>
+                {% endif %}
+                {% if talk.slidesUrl or talk.videoUrl %}
+                <div class="talk-links">
+                    {% if talk.slidesUrl %}
+                    <a href="{{ talk.slidesUrl }}" target="_blank" rel="noopener noreferrer">{{ viewSlides }} →</a>
+                    {% endif %}
+                    {% if talk.videoUrl %}
+                    <a href="{{ talk.videoUrl }}" target="_blank" rel="noopener noreferrer">{{ watchVideo }} →</a>
+                    {% endif %}
+                </div>
+                {% endif %}
             </div>
             {% endfor %}
         </div>
