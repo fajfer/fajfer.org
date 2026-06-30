@@ -161,87 +161,19 @@ nav.nav {
             }
         }
 
-        details {
-            position: relative;
+        .lang-flag {
+            font-size: 1.6rem;
+            line-height: 1;
+            padding: 0.4rem 0.6rem;
+            border-radius: 6px;
+            text-decoration: none;
             border-bottom: none !important;
-            background-color: transparent !important;
-
-            summary {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 3.2rem;
-                height: 3.2rem;
-                border-radius: 6px;
-                cursor: pointer;
-                list-style: none;
-                background-color: transparent !important;
-                border: none !important;
-                border-bottom: none !important;
-                transition: background-color 0.15s;
-
-                &::-webkit-details-marker { display: none; }
-
-                svg {
-                    fill: var(--color-grey);
-                    transition: fill 0.15s;
-                }
-
-                &:hover {
-                    background-color: var(--bg-elevated);
-                    svg { fill: var(--font-color); }
-                }
-            }
-
-            &[open] summary {
-                background-color: var(--bg-elevated);
-            }
-
-            .card {
-                position: absolute;
-                right: 0;
-                top: calc(100% + 0.6rem);
-                z-index: 100;
-                background-color: var(--bg-secondary-color) !important;
-                border: 1px solid var(--color-lightGrey) !important;
-                border-radius: 8px !important;
-                padding: 0.5rem !important;
-                min-width: 13rem;
-                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
-                display: flex !important;
-                flex-direction: column;
-                gap: 0.2rem;
-
-                span, a {
-                    display: block;
-                    padding: 0.5rem 0.8rem;
-                    border-radius: 5px;
-                    font-size: 1.4rem;
-                    text-decoration: none;
-                    color: var(--color-grey) !important;
-                    border-bottom: none !important;
-
-                    &.text-success {
-                        color: var(--font-color) !important;
-                        font-weight: 500;
-                    }
-
-                    &:hover {
-                        background-color: var(--bg-elevated);
-                        color: var(--font-color) !important;
-                        text-decoration: none;
-                    }
-                }
-            }
+            transition: background-color 0.15s;
 
             &:hover {
-                background-color: transparent !important;
-                border-bottom-color: transparent !important;
+                background-color: var(--bg-elevated);
+                text-decoration: none;
             }
-        }
-
-        details[open] {
-            background-color: transparent !important;
         }
 
         #nightModeWrapper {
