@@ -9,7 +9,38 @@
       "en": "Designs security into software development lifecycles and platforms, integrating security practices throughout the technology infrastructure.",
       "pl": "Projektowanie bezpieczeństwa w cyklu życia oprogramowania i platform, integracja praktyk bezpieczeństwa w całej infrastrukturze technologicznej."
     },
-    "image": null,
-    "tags": ["Security", "DevSecOps", "Banking"]
+    "image": "pekao.jpeg",
+    "tags": ["Cloud", "Cybersecurity", "DevOps", "Platform Engineering"]
+  },
+  {
+    "title": { "en": "Associate", "pl": "Konsultant IT" },
+    "company": "PwC", 
+    "companyUrl": "https://www.pwc.com",
+    "period": { "en": "Aug 2019 – May 2020", "pl": "Sie 2019 – Maj 2020" },
+    "location": "Warsaw, Poland",
+    "description": {
+      "en": "IT Consulting (DevOps, Cloud, SDLC)",
+      "pl": "Konsulting IT (DevOps, Chmura, SDLC)"
+    },
+    "image": "pwc.jpeg",
+    "tags": ["Consulting", "Cloud", "DevOps"]
+  },
+  {
+    "title": { "en": "DevOps Engineer", "pl": "Inżynier DevOps" },
+    "company": "Tenesys", 
+    "companyUrl": "https://tenesys.io",
+    "period": { "en": "Jul 2018 – Jul 2019", "pl": "Lip 2018 – Lip 2019" },
+    "location": "Poznań, Poland",
+    "image": "tenesys.png",
+    "tags": ["Consulting", "Cloud", "DevOps"]
+  },
+  {
+    "title": { "en": "System Administrator", "pl": "Administrator Systemów" },
+    "company": "Politechnika Poznańska", 
+    "companyUrl": "https://put.poznan.pl/",
+    "period": { "en": "Oct 2017 – Jul 2018", "pl": "Paź 2017 – Lip 2018" },
+    "location": "Poznań, Poland",
+    "image": "politechnika.png",
+    "tags": ["Linux"]
   }
 ]
