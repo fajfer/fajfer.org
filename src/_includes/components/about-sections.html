@@ -24,6 +24,7 @@
         <div class="tab-container">
             <div class="tab-buttons" role="tablist">
                 <button class="tab-btn active" data-tab="career" role="tab" aria-selected="true">{{ careerTab }}</button>
+                <button class="tab-btn" data-tab="education" role="tab" aria-selected="false">{{ educationTab }}</button>
                 <button class="tab-btn" data-tab="volunteer" role="tab" aria-selected="false">{{ volunteerTab }}</button>
             </div>
 
@@ -56,6 +57,42 @@
                         {% if job.tags %}
                         <div class="about-tags">
                             {% for tag in job.tags %}<span class="about-tag">{{ tag }}</span>{% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="tab-panel hidden" data-panel="education" role="tabpanel">
+                <div class="timeline">
+                    {% for edu in education %}
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            {% if edu.image %}
+                            <img class="timeline-thumb" src="/img/{{ edu.image }}" alt="{{ edu.school }}">
+                            {% endif %}
+                            <div class="timeline-meta">
+                                <h3>{{ edu.degree[lang] }}{% if edu.field %}, {{ edu.field[lang] }}{% endif %}</h3>
+                                <div class="timeline-sub">
+                                    {% if edu.schoolUrl %}
+                                    <a href="{{ edu.schoolUrl }}" target="_blank" rel="noopener noreferrer">{{ edu.school }}</a>
+                                    {% else %}
+                                    <span>{{ edu.school }}</span>
+                                    {% endif %}
+                                    <span class="timeline-period">{{ edu.period[lang] }}</span>
+                                </div>
+                                {% if edu.location %}
+                                <div class="timeline-location">{{ edu.location }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% if edu.description %}
+                        <p class="timeline-desc">{{ edu.description[lang] }}</p>
+                        {% endif %}
+                        {% if edu.tags %}
+                        <div class="about-tags">
+                            {% for tag in edu.tags %}<span class="about-tag">{{ tag }}</span>{% endfor %}
                         </div>
                         {% endif %}
                     </div>
