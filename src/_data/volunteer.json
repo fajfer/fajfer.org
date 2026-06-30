@@ -1,0 +1,14 @@
+[
+  {
+    "title": { "en": "Volunteer Role Title", "pl": "Tytuł roli wolontaryjnej" },
+    "organization": "Organization Name",
+    "organizationUrl": "https://example.org",
+    "period": { "en": "2021 – Present", "pl": "2021 – Teraz" },
+    "description": {
+      "en": "Describe your volunteer contribution here.",
+      "pl": "Opisz swój wkład wolontaryjny tutaj."
+    },
+    "image": null,
+    "tags": ["Community", "Open Source"]
+  }
+]

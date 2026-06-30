@@ -1,0 +1,39 @@
+[
+  {
+    "tab": "GitHub",
+    "items": [
+      {
+        "name": "Project Name",
+        "description": {
+          "en": "Short description of what this project does and why it matters.",
+          "pl": "Krótki opis co robi ten projekt i dlaczego ma znaczenie."
+        },
+        "url": "https://github.com/fajfer/project",
+        "tags": ["DevOps", "Open Source"]
+      },
+      {
+        "name": "Another Repo",
+        "description": {
+          "en": "Another GitHub project description.",
+          "pl": "Opis kolejnego projektu GitHub."
+        },
+        "url": "https://github.com/fajfer/another",
+        "tags": ["Homelab", "Automation"]
+      }
+    ]
+  },
+  {
+    "tab": "Managed",
+    "items": [
+      {
+        "name": "Initiative Name",
+        "description": {
+          "en": "A project you managed or led — not necessarily a GitHub repo.",
+          "pl": "Projekt który zarządzałeś lub prowadziłeś — niekoniecznie repozytorium GitHub."
+        },
+        "url": null,
+        "tags": ["Management", "Infrastructure"]
+      }
+    ]
+  }
+]

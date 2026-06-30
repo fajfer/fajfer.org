@@ -1,0 +1,32 @@
+[
+  {
+    "tab": "Technical",
+    "items": [
+      {
+        "name": "Organization Name",
+        "role": { "en": "Member", "pl": "Członek" },
+        "description": {
+          "en": "Describe what you do or contribute within this organization.",
+          "pl": "Opisz co robisz lub do czego się przyczyniasz w tej organizacji."
+        },
+        "url": "https://example.org",
+        "logo": null
+      }
+    ]
+  },
+  {
+    "tab": "Community",
+    "items": [
+      {
+        "name": "Another Organization",
+        "role": { "en": "Contributor", "pl": "Kontrybutor" },
+        "description": {
+          "en": "Another organization description.",
+          "pl": "Opis kolejnej organizacji."
+        },
+        "url": null,
+        "logo": null
+      }
+    ]
+  }
+]

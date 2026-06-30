@@ -10,5 +10,12 @@
     "publishedOn": "Date",
     "updatedOn": "updated on",
     "latestPosts": "Latest posts",
-    "aboutDamian": "Hello, I am a cat, as you can imagine. But you may also put your picture here and say something about you..."
+    "aboutDamian": "Hello, I am a cat, as you can imagine. But you may also put your picture here and say something about you...",
+    "experienceSection": "Experience",
+    "careerTab": "Career",
+    "volunteerTab": "Volunteer",
+    "certificatesSection": "Certificates",
+    "projectsSection": "Projects",
+    "organizationsSection": "Organizations",
+    "viewProject": "View project"
 }

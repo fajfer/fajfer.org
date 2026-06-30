@@ -1,0 +1,28 @@
+[
+  {
+    "title": { "en": "Your Most Recent Job Title", "pl": "Twoje ostatnie stanowisko" },
+    "company": "Company Name",
+    "companyUrl": "https://example.com",
+    "period": { "en": "Jan 2022 – Present", "pl": "Sty 2022 – Teraz" },
+    "location": "Warsaw, Poland",
+    "description": {
+      "en": "Describe what you did here. Focus on impact — what you shipped, improved, or led.",
+      "pl": "Opisz co tutaj robiłeś. Skupiaj się na efektach — co wdrożyłeś, usprawniłeś lub prowadziłeś."
+    },
+    "image": null,
+    "tags": ["DevOps", "Kubernetes", "CI/CD"]
+  },
+  {
+    "title": { "en": "Previous Job Title", "pl": "Poprzednie stanowisko" },
+    "company": "Previous Company",
+    "companyUrl": null,
+    "period": { "en": "Mar 2020 – Dec 2021", "pl": "Mar 2020 – Gru 2021" },
+    "location": "Remote",
+    "description": {
+      "en": "Another role description. Add as many entries as you need.",
+      "pl": "Opis kolejnej roli. Dodaj tyle wpisów ile potrzebujesz."
+    },
+    "image": null,
+    "tags": ["AWS", "Docker", "GitLab CI"]
+  }
+]
