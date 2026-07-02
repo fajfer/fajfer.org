@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+
+  <head>
+  {% include "components/meta.html" %}
+    <title>{{ title }}</title>
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src="https://analiza.reszka.org/js/pa-b_D8jaYGes8e19er1lSla.js"></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+    </script>
+    <link {% if data.languages[0] === lang %}id="default-lang"{% endif %} rel="alternate" hreflang="{{ lang }}" href="{{ [data.baseUrl, page.url] | join }}">
+    {% for link in page.url | locale_links %}
+    <link {% if data.languages[0] === link.lang %}id="default-lang"{% endif %} rel="alternate" hreflang="{{ link.lang }}" href="{{ [data.baseUrl, link.url] | join | url }}">
+    {% endfor %}
+    <meta name="description" content="{{ title }}">
+    <meta name="author" content="{{ data.author }}">
+    <meta name="keywords" content="{{ data.keywords[lang] }}">
+  </head>
+
+  <body id="nightModeDiv" class="dark-theme" vocab="https://schema.org/">
+    {% include "components/navbar.html" %}
+    <main>
+      {{ content | safe }}
+    </main>
+    {% include "components/footer.html" %}
+    {% include "components/scripts.html" %}
+
+  </body>
+
+</html>

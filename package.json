@@ -1,0 +1,40 @@
+{
+    "name": "blog-fajfer-org",
+    "version": "1.0.0",
+    "description": "Personal blog of Damian Fajfer built with 11ty",
+    "keywords": [
+        "11ty",
+        "eleventy"
+    ],
+    "author": "Damian Fajfer",
+    "license": "EUPL-1.2",
+    "homepage": "https://blog.fajfer.org",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fajfer/fajfer.org"
+    },
+    "scripts": {
+        "watch:sass": "sass --watch src/sass src/css",
+        "watch:eleventy": "NODE_ENV=development eleventy --serve",
+        "build:sass": "sass src/sass src/css",
+        "build:eleventy": "eleventy",
+        "dev": "npm-run-all build:sass --parallel watch:*",
+        "build": "npm-run-all build:sass --parallel build:*"
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "^2.0.1",
+        "@11ty/eleventy-plugin-rss": "^1.2.0",
+        "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+        "auditjs": "^4.0.45",
+        "chota": "^0.9.2",
+        "clean-css": "^5.3.3",
+        "html-minifier": "^4.0.0",
+        "npm-run-all": "^4.1.5",
+        "sass": "^1.79.3",
+        "vnu-jar": "^23.4.11",
+        "markdown-it-footnote": "^4.0.0"
+    },
+    "dependencies": {
+        "markdown-it-footnote": "^4.0.0"
+    }
+}

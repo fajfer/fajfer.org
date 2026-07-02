@@ -1,0 +1,38 @@
+[
+  {
+    "title": { "en": "Principal Application Security Architect", "pl": "Główny Architekt Bezpieczeństwa Aplikacji" },
+    "company": "Bank Pekao S.A.",
+    "companyUrl": "https://www.pekao.com.pl",
+    "period": { "en": "Jun 2020 – Present", "pl": "Cze 2020 – Teraz" },
+    "image": "orgs/pekao.jpeg",
+    "tags": ["Cloud", "Cybersecurity", "DevOps", "Platform Engineering"]
+  },
+  {
+    "title": { "en": "Associate", "pl": "Konsultant IT" },
+    "company": "PwC", 
+    "companyUrl": "https://www.pwc.com",
+    "period": { "en": "Aug 2019 – May 2020", "pl": "Sie 2019 – Maj 2020" },
+    "description": {
+      "en": "IT Consulting (DevOps, Cloud, SDLC)",
+      "pl": "Konsulting IT (DevOps, Chmura, SDLC)"
+    },
+    "image": "orgs/pwc.jpeg",
+    "tags": ["Consulting", "Cloud", "DevOps"]
+  },
+  {
+    "title": { "en": "DevOps Engineer", "pl": "Inżynier DevOps" },
+    "company": "Tenesys", 
+    "companyUrl": "https://tenesys.io",
+    "period": { "en": "Jul 2018 – Jul 2019", "pl": "Lip 2018 – Lip 2019" },
+    "image": "orgs/tenesys.png",
+    "tags": ["Consulting", "Cloud", "DevOps"]
+  },
+  {
+    "title": { "en": "System Administrator", "pl": "Administrator Systemów" },
+    "company": "Politechnika Poznańska", 
+    "companyUrl": "https://put.poznan.pl/",
+    "period": { "en": "Oct 2017 – Jul 2018", "pl": "Paź 2017 – Lip 2018" },
+    "image": "orgs/politechnika.png",
+    "tags": ["Linux"]
+  }
+]

@@ -1,0 +1,133 @@
+[
+  {
+    "tab": {
+      "en": "Projects",
+      "pl": "Projekty"
+    },
+    "items": [
+      {
+        "name": {
+          "en": "SPOIWO - Alliance of Friends of Open and Free Software",
+          "pl": "SPOIWO - Sojusz Przyjaciół Otwartego i Wolnego Oprogramowania"
+        },
+        "description": {
+          "en": "Alliance of Polish NGOs, companies, and experts working on free software",
+          "pl": "Sojusz polskich organizacji pozarządowych, firm i ekspertów zajmujących się wolnym oprogramowaniem"
+        },
+        "url": "https://spoiwo.tech/",
+        "tags": ["Digital Sovereignty", "Free Software", "Advocacy"]
+      },
+      {
+        "name": {
+          "en": "Poznań Free Software Fest",
+          "pl": "Poznańska Impreza Wolnego Oprogramowania"
+        },
+        "description": {
+          "en": "Since 2017, I have been co-organizing the largest free software conference in Poland.",
+          "pl": "Od 2017 jestem współorganizatorem największej konferencji dotyczącej wolnego oprogramowania w Polsce"
+        },
+        "url": "https://piwo.sh",
+        "tags": ["Civic", "Community", "Grant"]
+      }
+    ]
+  },
+  {
+    "tab": {
+      "en": "Grants",
+      "pl": "Granty"
+    },
+    "items": [
+      {
+        "name": {
+          "en": "CiviCRM Implementation",
+          "pl": "Wdrożenie systemu CiviCRM"
+        },
+        "description": {
+          "en": "Implementation, support and maintenance of the CiviCRM system as part of the implementation of a public task.",
+          "pl": "Wdrożenie, wsparcie i utrzymanie systemu CiviCRM w ramach realizacji zadania publicznego."
+        },
+        "url": null,
+        "tags": ["Free Software", "Grant"]
+      },
+      {
+        "name": {
+          "en": "Responsible Upcycling with the Bison",
+          "pl": "Odpowiedzialne Upcykling z Żubrem"
+        },
+        "description": {
+          "en": "Series of workshops on upcycling, equipping a school workshop room, exhibition of projects created by students. Grant from the Bank Pekao Foundation \"Jesteśmy Blisko\" in 2025.",
+          "pl": "​Seria warsztatów z upcyklingu, doposażenie szkolnej sali majsterkowicza, wernisaż projektów stworzonych przez uczniów. Grant Fundacji Banku Pekao S.A. \"Jesteśmy Blisko\" z 2025 roku."
+        },
+        "tags": ["Community", "Grant", "Jesteśmy Blisko"]
+      },
+      {
+        "name": {
+          "en": "Culinary Tourism Substrategy",
+          "pl": "Podstrategia turystyki kulinarnej"
+        },
+        "description": {
+          "en": "Comprehensive technological support as part of the implementation of a public task by the Ministry of Sport and Tourism.",
+          "pl": "Kompleksowe wsparcie technologiczne w ramach realizacji zadania publicznego Ministerstwa Sportu i Turystyki."
+        },
+        "url": "https://pstk.pl/podstrategia/",
+        "tags": ["Culinary Tourism", "Grant"]
+      },
+      {
+        "name": {
+          "en": "MOC - Mobile Public Reading Room",
+          "pl": "MOC - Mobilna Ogólnodostępna Czytelnia"
+        },
+        "description": {
+          "en": "Revitalization of the library and construction of a mobile reading room at a local school. Grant from the Bank Pekao Foundation in 2023.",
+          "pl": "Rewitalizacja biblioteki i budowa mobilnej czytelni w ZS nr 2 w Grajewie. Grant Fundacji Banku Pekao S.A. \"Jesteśmy Blisko\" z 2023 roku."
+        },
+        "url": "/pl/blog/moc-czytelnia",
+        "tags": ["Community", "Grant", "Jesteśmy Blisko"]
+      },
+      {
+        "name": {
+          "en": "Safe with the Bison",
+          "pl": "Bezpiecznie z Żubrem"
+        },
+        "description": {
+          "en": "Krav Maga training and online safety workshops. Grant from the Bank Pekao Foundation in 2021.",
+          "pl": "Organizacja treningów Krav Magi oraz szkolenia z bezpieczeństwa w sieci. Grant Fundacji Banku Pekao S.A. \"Jesteśmy Blisko\" z 2021 roku."
+        },
+        "url": "/pl/blog/bezpiecznie-z-zubrem",
+        "tags": ["Community", "Grant", "Jesteśmy Blisko"]
+      }
+    ]
+  },
+  {
+    "tab": {
+      "en": "Software",
+      "pl": "Oprogramowanie"
+    },
+    "items": [
+      {
+        "name": {
+          "en": "Chronowarden",
+          "pl": "Chronowarden"
+        },
+        "description": {
+          "en": "Monitor and track expiring secrets across your Vault infrastructure.",
+          "pl": "Monitorowanie i śledzenie wygasających sekretów w Vaultach."
+        },
+        "url": "https://github.com/fajfer/chronowarden",
+        "tags": ["Monitoring", "Observability", "Free Software"]
+      },
+      {
+        "name": {
+          "en": "gcups",
+          "pl": "gcups"
+        },
+        "description": {
+          "en": "Green Cell UPS software in container",
+          "pl": "Skonteneryzowane Oprogramowanie Green Cell UPS"
+        },
+        "url": "https://github.com/fajfer/gcups",
+        "tags": ["Containers", "Free Software"]
+      }
+    ]
+  }
+]

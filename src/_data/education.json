@@ -1,0 +1,37 @@
+[
+  {
+    "degree": { "en": "Agriculture", "pl": "Rolnictwo" },
+    "school": "Szkoła Główna Gospodarstwa Wiejskiego",
+    "schoolUrl": "https://sggw.edu.pl/",
+    "period": { "en": "2024 – 2025", "pl": "2024 – 2025" },
+    "image": "orgs/sggw.jpg"
+  },
+  {
+    "degree": { "en": "Software Engineering", "pl": "Inżynieria Oprogramowania" },
+    "school": "Politechnika Warszawska",
+    "schoolUrl": "https://www.pw.edu.pl/",
+    "period": { "en": "2023 – 2025", "pl": "2023 – 2025" },
+    "image": "orgs/pw.png"
+  },
+  {
+    "degree": { "en": "Applied Computer Science", "pl": "Informatyka Stosowana" },
+    "school": "Politechnika Warszawska",
+    "schoolUrl": "https://www.pw.edu.pl/",
+    "period": { "en": "2019 – 2022", "pl": "2019 – 2022" },
+    "image": "orgs/pw.png"
+  },
+  {
+    "degree": { "en": "Information and Communication Technology", "pl": "Teleinformatyka" },
+    "school": "Politechnika Poznańska",
+    "schoolUrl": "https://put.poznan.pl/",
+    "period": { "en": "2015 – 2019", "pl": "2015 – 2019" },
+    "image": "orgs/politechnika.png"
+  },
+  {
+    "degree": { "en": "IT Technician", "pl": "Technik Informatyk" },
+    "school": "Zespół Szkół Nr 2 im. 9. Pułku Strzelców Konnych",
+    "schoolUrl": "https://zs2.grajewo.pl",
+    "period": { "en": "2010 – 2015", "pl": "2010 – 2015" },
+    "image": "orgs/jednostka.png"
+  }
+]

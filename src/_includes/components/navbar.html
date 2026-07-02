@@ -1,0 +1,25 @@
+<header>
+    <nav class="nav">
+        <div class="content">
+            <div class="nav-left">
+                <a class="brand" href="{{ '/' | locale_url | url }}" title="{{ home }}">
+                    {{ data.title[lang] or data.title[data.languages[0]] }}
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="tabs">
+                    <a href="{{ '/' | locale_url | url }}">{{ home }}</a>
+                    <a href="{{ '/about' | locale_url | url }}">{{ about }}</a>
+                    {% if lang %}
+                    {% for link in page.url | locale_links %}
+                    <a href="{{ link.url | url }}" class="lang-flag" title="{{ data.languageLabels[link.lang] }}">
+                        {% if link.lang == 'en' %}🇬🇧{% endif %}
+                        {% if link.lang == 'pl' %}🇵🇱{% endif %}
+                    </a>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

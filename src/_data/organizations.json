@@ -1,0 +1,122 @@
+[
+  {
+    "tab": {
+      "en": "Free Software",
+      "pl": "Wolne Oprogramowanie"
+    },
+    "items": [
+      {
+        "name": {
+          "en": "Free Software Foundation Europe",
+          "pl": "Free Software Foundation Europe"
+        },
+        "role": { "en": "Core Team Member · Poland Coordinator", "pl": "Członek Głównego Zespołu · Koordynator (Polska)" },
+        "description": {
+          "en": "FSFE is a non-profit organisation that empowers users to control technology by promoting free software.",
+          "pl": "FSFE to organizacja non-profit, która poprzez promocję wolnego oprogramowania dba o to, by użytkownicy mogli kontrolować technologię."
+        },
+        "url": "https://fsfe.org",
+        "logo": "img/orgs/fsfe.png"
+      },
+      {
+        "name": {
+          "en": "OpenChain Meridian 22 Working Group",
+          "pl": "Grupa Robocza OpenChain Południk 22"
+        },
+        "role": { "en": "Member", "pl": "Członek" },
+        "description": {
+          "en": "We promote the OpenChain community and ISO standards, and discuss local developments in open source compliance and supply chain security. ",
+          "pl": "Promujemy społeczność OpenChain i standardy ISO, a także omawiamy lokalne postępy w zakresie zgodności z open source i bezpieczeństwa łańcucha dostaw."
+        },
+        "url": "https://fajfer.github.io/OpenChain-Meridian22/",
+        "logo": "img/orgs/openchain.png"
+      },
+      {
+        "name": {
+          "en": "Polish Linux Users Group (PLUG)",
+          "pl": "Polska Grupa Użytkowników Linuksa (PLUG)"
+        },
+        "role": { "en": "Secretary", "pl": "Sekretarz" },
+        "description": {
+          "en": "One of the oldest Linux user groups in Poland, bringing together enthusiasts and professionals around open source and Linux.",
+          "pl": "Jedna z najstarszych grup użytkowników Linuksa w Polsce, skupiająca entuzjastów i profesjonalistów wokół otwartego oprogramowania i Linuksa."
+        },
+        "url": "https://www.linux.org.pl/",
+        "logo": "img/orgs/plug.png"
+      },
+    {
+        "name": {
+          "en": "Fundacja Wolnego Oprogramowania Reszka",
+          "pl": "Fundacja Wolnego Oprogramowania Reszka"
+        },
+        "role": { "en": "President", "pl": "Prezes" },
+        "description": {
+          "en": "Local free software foundation promoting digital rights and software freedom.",
+          "pl": "Lokalna fundacja wolnego oprogramowania promująca prawa cyfrowe i wolność oprogramowania."
+        },
+        "url": "https://reszka.org/",
+        "logo": "img/orgs/reszka.png"
+      }
+    ]
+  },
+  {
+    "tab": {
+      "en": "Associations",
+      "pl": "Stowarzyszenia"
+    },
+    "items": [
+      {
+        "name": {
+          "en": "Polish Riflemen's Association \"Strzelec\" Social and Educational Organization",
+          "pl": "Związek Strzelecki \"Strzelec\" Organizacja Społeczno-Wychowawcza"
+        },
+        "role": { "en": "Sergeant · Member of the Audit Committee", "pl": "Sierżant · Członek komisji rewizyjnej" },
+        "description": {
+          "en": "A patriotic association aiming to continue the legacy of the interwar period Riflemen's Association.",
+          "pl": "Patriotyczne stowarzyszenie stawiające sobie za cel kontynuację istniejącego w okresie międzywojennym Związku Strzeleckiego"
+        },
+        "url": "https://pl.wikipedia.org/wiki/Zwi%C4%85zek_Strzelecki_%E2%80%9EStrzelec%E2%80%9D_Organizacja_Spo%C5%82eczno-Wychowawcza",
+        "logo": "img/orgs/osw.png"
+      },
+      {
+        "name": {
+          "en": "Polish Riflemen's Unit 1011 Grajewo",
+          "pl": "ZS „STRZELEC” OSW Jednostka Strzelecka 1011 im. rtm. Wiktora Konopki ps. \"Grom\" "
+        },
+        "role": { "en": "Deputy Unit Commander", "pl": "Zastępca d-cy jednostki" },
+        "description": {
+          "en": "Local unit in Grajewo",
+          "pl": "Lokalna jednostka w Grajewie"
+        },
+        "url": "https://strzelec.grajewo.pl/",
+        "logo": "img/orgs/osw.png"
+      },
+      {
+        "name": {
+          "en": "Polish Culinary Tourism Association",
+          "pl": "Polskie Stowarzyszenie Turystyki Kulinarnej"
+        },
+        "role": { "en": "Member", "pl": "Członek" },
+        "description": {
+          "en": "It brings together people with culinary interests and is open to everyone who loves to explore the culture of the places they visit through their cuisine.",
+          "pl": "Skupia osoby o kulinarnych zainteresowaniach i jest otwarte na wszystkich, którzy uwielbiają poznawać kulturę odwiedzanych miejsc poprzez ich kuchnię."
+        },
+        "url": "https://pstk.pl/",
+        "logo": "img/orgs/pstk.jpeg"
+      },
+      {
+        "name": {
+          "en": "Warsaw Hackerspace",
+          "pl": "Warszawski Hackerspace"
+        },
+        "role": { "en": "Supporting Member", "pl": "Członek Wspierający" },
+        "description": {
+          "en": "A space created and maintained by a group of creative individuals united by a fascination with general creation in the spirit of hacker culture.",
+          "pl": "Przestrzeń stworzona i utrzymywana przez grupę kreatywnych osób, które łączy fascynacja ogólno pojętym tworzeniem w duchu kultury hackerskiej."
+        },
+        "url": "https://hackerspace.pl/",
+        "logo": "img/orgs/hswaw.png"
+      }
+    ]
+  }
+]
