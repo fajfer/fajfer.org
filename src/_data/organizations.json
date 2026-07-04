@@ -10,7 +10,7 @@
           "en": "Free Software Foundation Europe",
           "pl": "Free Software Foundation Europe"
         },
-        "role": { "en": "Core Team Member · Poland Coordinator", "pl": "Członek Głównego Zespołu · Koordynator (Polska)" },
+        "role": { "en": "Core Team Member · Poland Coordinator · Supporting Member", "pl": "Członek Głównego Zespołu · Koordynator (Polska) · Członek wspierający" },
         "description": {
           "en": "FSFE is a non-profit organisation that empowers users to control technology by promoting free software.",
           "pl": "FSFE to organizacja non-profit, która poprzez promocję wolnego oprogramowania dba o to, by użytkownicy mogli kontrolować technologię."
@@ -44,7 +44,7 @@
         "url": "https://www.linux.org.pl/",
         "logo": "img/orgs/plug.png"
       },
-    {
+      {
         "name": {
           "en": "Fundacja Wolnego Oprogramowania Reszka",
           "pl": "Fundacja Wolnego Oprogramowania Reszka"
@@ -56,6 +56,19 @@
         },
         "url": "https://reszka.org/",
         "logo": "img/orgs/reszka.png"
+      },
+      {
+        "name": {
+          "en": "KDE e.V.",
+          "pl": "KDE e.V."
+        },
+        "role": { "en": "Supporting Member", "pl": "Członek wspierający" },
+        "description": {
+          "en": "KDE e.V. is a registered non-profit organization that represents the KDE Community in legal and financial matters.",
+          "pl": "KDE e.V. jest zarejestrowaną organizacją non-profit, która reprezentuje społeczność KDE w sprawach prawnych i finansowych."
+        },
+        "url": "https://ev.kde.org/",
+        "logo": "img/orgs/kde.png"
       }
     ]
   },
