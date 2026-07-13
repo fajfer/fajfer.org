@@ -76,6 +76,13 @@
     "tab": "Kubernetes",
     "items": [
       {
+        "name": "CKAD: Certified Kubernetes Application Developer",
+        "issuer": "The Linux Foundation",
+        "year": "2026 - 2028",
+        "image": "/img/certs/ckad.png",
+        "url": "https://www.credly.com/badges/5e729f67-182a-4acf-b6c2-b221153de2da/public_url"
+      },
+      {
         "name": "CKA: Certified Kubernetes Administrator",
         "issuer": "The Linux Foundation",
         "year": "2025 - 2027",
@@ -95,6 +102,18 @@
         "year": "2026 - 2028",
         "image": "/img/certs/kcna.png",
         "url": "https://www.credly.com/badges/f4b36a46-4495-4b5b-bbe4-94bd7e070139/public_url"
+      }
+    ]
+  },
+  {
+    "tab": "Linux Foundation",
+    "items": [
+      {
+        "name": "LFD137: Open Source Contribution in Finance",
+        "issuer": "The Linux Foundation",
+        "year": "2026",
+        "image": "/img/certs/lfd137.png",
+        "url": "https://www.credly.com/badges/9cfebd1f-20de-46cd-a695-b2a333cf1bcc/public_url"
       }
     ]
   },
