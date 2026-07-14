@@ -6,21 +6,21 @@
         "name": "Azure Solutions Architect Expert",
         "issuer": "AZ-305",
         "year": "2023 - 2027",
-        "image": "/img/certs/ms-expert.png",
+        "image": "/img/certs/ms-azure-solutions-architect.png",
         "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/1FD8CFA337181961?sharingId=F6AABA649AFD55D9"
       },
       {
         "name": "Azure AI Engineer Associate",
         "issuer": "AI-102",
         "year": "2024 - 2027",
-        "image": "/img/certs/ms-associate.png",
+        "image": "/img/certs/azure-ai-engineer.png",
         "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/F38F4CD7AF232088?sharingId=F6AABA649AFD55D9"
       },
       {
         "name": "Azure Administrator Associate",
         "issuer": "AZ-104",
         "year": "2023 - 2027",
-        "image": "/img/certs/ms-associate.png",
+        "image": "/img/certs/microsoft-certified-azure-administrator-associate.2.png",
         "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/7129E33161C00539?sharingId=F6AABA649AFD55D9"
       },
       {
@@ -34,28 +34,28 @@
         "name": "Azure AI Fundamentals",
         "issuer": "AI-900",
         "year": "2023",
-        "image": "/img/certs/ms-fundamentals.png",
+        "image": "/img/certs/microsoft-certified-azure-ai-fundamentals.png",
         "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/7E870BD877D50145?sharingId=F6AABA649AFD55D9"
       },
       {
         "name": "Security, Compliance, and Identity Fundamentals",
         "issuer": "SC-900",
         "year": "2023",
-        "image": "/img/certs/ms-fundamentals.png",
+        "image": "/img/certs/microsoft-certified-security-compliance-and-identity-fundamentals.png",
         "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/375F99CC4A3EBA7D?sharingId=F6AABA649AFD55D9"
       },      
       {
         "name": "Azure Data Fundamentals",
         "issuer": "DP-900",
         "year": "2023",
-        "image": "/img/certs/ms-fundamentals.png",
+        "image": "/img/certs/microsoft-certified-azure-data-fundamentals.png",
         "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/8728882074220947?sharingId=F6AABA649AFD55D9"
       },
       {
         "name": "Azure Fundamentals",
         "issuer": "AZ-900",
         "year": "2019",
-        "image": "/img/certs/ms-fundamentals.png",
+        "image": "/img/certs/microsoft-certified-azure-fundamentals.png",
         "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/DF013F49CBB37FD5?sharingId=F6AABA649AFD55D9"
       }
     ]
@@ -106,25 +106,13 @@
     ]
   },
   {
-    "tab": "Linux Foundation",
-    "items": [
-      {
-        "name": "LFD137: Open Source Contribution in Finance",
-        "issuer": "The Linux Foundation",
-        "year": "2026",
-        "image": "/img/certs/lfd137.png",
-        "url": "https://www.credly.com/badges/9cfebd1f-20de-46cd-a695-b2a333cf1bcc/public_url"
-      }
-    ]
-  },
-  {
     "tab": "Microsoft",
     "items": [
       {
         "name": "Power BI Data Analyst Associate",
         "issuer": "PL-300",
         "year": "2023 - 2027",
-        "image": "/img/certs/ms-associate.png",
+        "image": "/img/certs/microsoft-certified-power-bi-data-analyst-associate.png",
         "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/C8B5E081C5DD0E37?sharingId=F6AABA649AFD55D9"
       },
       {
@@ -152,15 +140,34 @@
         "name": "Microsoft 365 Fundamentals",
         "issuer": "MS-900",
         "year": "2023",
-        "image": "/img/certs/ms-fundamentals.png",
+        "image": "/img/certs/microsoft-365-certified-fundamentals.png",
         "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/430F099F535113C3?sharingId=F6AABA649AFD55D9"
       },
       {
         "name": "Power Platform Fundamentals",
         "issuer": "PL-900",
         "year": "2023",
-        "image": "/img/certs/ms-fundamentals.png",
+        "image": "/img/certs/microsoft-certified-power-platform-fundamentals.png",
         "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/70782C5521A89BF7?sharingId=F6AABA649AFD55D9"
+      }
+    ]
+  },
+  {
+    "tab": "e-Learning",
+    "items": [
+      {
+        "name": "LFD137: Open Source Contribution in Finance",
+        "issuer": "The Linux Foundation",
+        "year": "2026",
+        "image": "/img/certs/lfd137.png",
+        "url": "https://www.credly.com/badges/9cfebd1f-20de-46cd-a695-b2a333cf1bcc/public_url"
+      },
+      {
+        "name": "Kusto Detective Agency - Onboarding",
+        "issuer": "Microsoft Azure Data Explorer",
+        "year": "2023",
+        "image": "/img/certs/kusto-detective-agency-onboarding.png",
+        "url": "https://www.credly.com/badges/4b468464-a1c9-4547-9680-154b4ac02d6c/public_url"
       }
     ]
   }
