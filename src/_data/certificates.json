@@ -109,6 +109,13 @@
     "tab": "Microsoft",
     "items": [
       {
+        "name": "GitHub Agentic AI Developer",
+        "issuer": "GitHub",
+        "year": "2026 - 2027",
+        "image": "/img/certs/github-agentic-ai-developer.svg",
+        "url": "https://learn.microsoft.com/api/credentials/share/en-us/fajfer/370AEF1E032BBEB3?sharingId=F6AABA649AFD55D9"
+      },
+      {
         "name": "Power BI Data Analyst Associate",
         "issuer": "PL-300",
         "year": "2023 - 2027",
