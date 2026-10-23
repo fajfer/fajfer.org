@@ -1,6 +1,20 @@
 [
   {
     "title": {
+      "en": "Open Source under control",
+      "pl": "Open Source pod kontrolą"
+    },
+    "event": "Jesień Linuksowa",
+    "year": 2026,
+    "description": {
+      "en": "During this talk, I will examine free and open-source software from the perspective of an organization that needs to use it securely. I will present mechanisms for assessing components, verifying the provenance of artifacts, and mitigating risk. I will discuss, among other things, SCA, SBOM, SLSA, signing and verifying artifacts, and selected tools and practices developed within the OpenSSF.",
+      "pl": "Podczas prelekcji spojrzę na wolne i otwarte oprogramowanie z perspektywy organizacji, która musi bezpiecznie z niego korzystać. Przedstawię mechanizmy służące do oceny komponentów, weryfikowania pochodzenia artefaktów i ograniczania ryzyka. Omówię między innymi SCA, SBOM, SLSA, podpisywanie i weryfikowanie artefaktów oraz wybrane narzędzia i praktyki rozwijane w ramach OpenSSF."
+    },
+    "slidesUrl": "/slides/jesien2026/slides.html",
+    "tags": ["Cybersecurity", "Supply Chain", "Free Software"]
+  },
+  {
+    "title": {
       "en": "Nightscout - How Free Software Simplifies Life for Diabetics",
       "pl": "Nightscout, czyli jak wolne oprogramowanie upraszcza życie diabetykom"
     },
