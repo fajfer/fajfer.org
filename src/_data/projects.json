@@ -118,6 +118,18 @@
       },
       {
         "name": {
+          "en": "OpenBadge Inspector",
+          "pl": "OpenBadge Inspector"
+        },
+        "description": {
+          "en": "Finds Open Badges baked into images on a page and shows whether they are valid.",
+          "pl": "Wykrywa odznaki typu Open Badges osadzone w obrazkach na stronie."
+        },
+        "url": "https://addons.mozilla.org/en-US/firefox/addon/openbadge-inspector/",
+        "tags": ["Web Development"]
+      },
+      {
+        "name": {
           "en": "gcups",
           "pl": "gcups"
         },
