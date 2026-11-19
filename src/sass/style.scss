@@ -825,63 +825,69 @@ article.container {
 
 /* Talks */
 .talk-list {
-    display: grid;
-    gap: 1.2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.talk-card {
-    border: 1px solid var(--color-lightGrey);
-    border-radius: 8px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    background-color: var(--bg-secondary-color);
-    transition: border-color 0.15s;
+.talk-show-more {
+    @extend .show-more-item;
+    min-height: 8rem;
+}
 
-    &:hover { border-color: var(--color-grey); }
+.talk-row {
+    display: grid;
+    grid-template-columns: 10ch 1fr auto;
+    grid-template-areas:
+        "date title links"
+        ".    event links";
+    column-gap: 1.5rem;
+    row-gap: 0.2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-lightGrey);
 
-    h3 {
-        margin: 0;
+    &:last-child { border-bottom: none; }
+
+    .talk-date {
+        grid-area: date;
+        font-family: var(--font-family-mono);
+        font-size: 1.3rem;
+        color: var(--color-grey);
+        padding-top: 0.15rem;
+    }
+
+    .talk-title,
+    .talk-event { min-width: 0; overflow-wrap: anywhere; }
+
+    .talk-title {
+        grid-area: title;
         font-size: 1.5rem;
         font-weight: 600;
     }
 
-    p {
-        margin: 0;
-        color: var(--color-grey);
-        line-height: 1.5;
-        font-size: 1.4rem;
-    }
-
-    .talk-meta {
-        display: flex;
-        align-items: center;
-        gap: 0.8rem;
-        flex-wrap: wrap;
-    }
-
     .talk-event {
-        font-family: var(--font-family-mono);
-        font-size: 1.2rem;
-        color: var(--color-primary);
-        font-weight: 500;
+        grid-area: event;
+        justify-self: start;
+        font-size: 1.3rem;
+        color: var(--color-grey);
     }
 
-    .talk-year {
-        font-family: var(--font-family-mono);
-        font-size: 1.2rem;
-        color: var(--color-grey);
+    a.talk-event {
+        text-decoration: underline;
+        text-decoration-color: var(--color-lightGrey);
+        text-underline-offset: 0.2em;
 
-        &::before { content: "·  "; }
+        &:hover {
+            color: var(--color-primary);
+            text-decoration-color: currentColor;
+        }
     }
 
     .talk-links {
+        grid-area: links;
         display: flex;
         gap: 1rem;
-        flex-wrap: wrap;
-        margin-top: auto;
-        padding-top: 0.5rem;
+        align-self: center;
 
         a {
             font-family: var(--font-family-mono);
@@ -893,11 +899,13 @@ article.container {
             &:hover { text-decoration: underline; }
         }
     }
-}
 
-.talk-show-more {
-    @extend .show-more-item;
-    min-height: 8rem;
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+        grid-template-areas: "date" "title" "event" "links";
+
+        .talk-links { align-self: start; padding-top: 0.3rem; }
+    }
 }
 
 /* Organizations */

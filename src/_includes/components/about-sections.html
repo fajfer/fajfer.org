@@ -215,35 +215,26 @@
     <!-- Talks -->
     <section id="talks" class="about-section">
         <h2>{{ talksSection }}</h2>
-        <div class="talk-list" data-more="{{ showMore }}">
-            {% for talk in talks %}
-            <div class="talk-card">
-                <div class="talk-meta">
-                    <span class="talk-event">{{ talk.event }}</span>
-                    <span class="talk-year">{{ talk.year }}</span>
-                </div>
-                <h3>{{ talk.title[lang] }}</h3>
-                {% if talk.description %}
-                <p>{{ talk.description[lang] }}</p>
-                {% endif %}
-                {% if talk.tags %}
-                <div class="about-tags">
-                    {% for tag in talk.tags %}<span class="about-tag">{{ tag }}</span>{% endfor %}
-                </div>
+        {% macro talkRow(talk) %}
+            <li class="talk-row">
+                <time class="talk-date" datetime="{{ talk.date }}">{{ talk.date }}</time>
+                <span class="talk-title">{{ talk.title[lang] }}</span>
+                {% if talk.eventUrl %}
+                <a class="talk-event" href="{{ talk.eventUrl }}" target="_blank" rel="noopener noreferrer">{{ talk.event }}</a>
+                {% else %}
+                <span class="talk-event">{{ talk.event }}</span>
                 {% endif %}
                 {% if talk.slidesUrl or talk.videoUrl %}
-                <div class="talk-links">
-                    {% if talk.slidesUrl %}
-                    <a href="{{ talk.slidesUrl }}" target="_blank" rel="noopener noreferrer">{{ viewSlides }} →</a>
-                    {% endif %}
-                    {% if talk.videoUrl %}
-                    <a href="{{ talk.videoUrl }}" target="_blank" rel="noopener noreferrer">{{ watchVideo }} →</a>
-                    {% endif %}
-                </div>
+                <span class="talk-links">
+                    {% if talk.slidesUrl %}<a href="{{ talk.slidesUrl }}" target="_blank" rel="noopener noreferrer">{{ viewSlides }}</a>{% endif %}
+                    {% if talk.videoUrl %}<a href="{{ talk.videoUrl }}" target="_blank" rel="noopener noreferrer">{{ watchVideo }}</a>{% endif %}
+                </span>
                 {% endif %}
-            </div>
-            {% endfor %}
-        </div>
+            </li>
+        {% endmacro %}
+        <ul class="talk-list" data-more="{{ showMore }}" data-visible="3">
+            {% for talk in talks | sort(true, false, "date") %}{{ talkRow(talk) }}{% endfor %}
+        </ul>
     </section>
 
     <!-- Organizations (tabbed by category) -->
@@ -356,16 +347,17 @@
     function collapseTalkList(list) {
         if (list.dataset.listExpanded) return;
 
-        var existing = list.querySelector('.talk-show-more');
-        if (existing) existing.remove();
+        var existing = list.nextElementSibling;
+        if (existing && existing.classList.contains('talk-show-more')) existing.remove();
 
-        var items = Array.from(list.querySelectorAll('.talk-card'));
-        if (items.length < 2) return;
+        var visible = parseInt(list.dataset.visible, 10) || 1;
+        var items = Array.from(list.querySelectorAll('.talk-row'));
+        if (items.length <= visible) return;
 
         items.forEach(function (item) { item.classList.remove('grid-item-hidden'); });
-        items.slice(1).forEach(function (item) { item.classList.add('grid-item-hidden'); });
+        items.slice(visible).forEach(function (item) { item.classList.add('grid-item-hidden'); });
 
-        var hiddenCount = items.length - 1;
+        var hiddenCount = items.length - visible;
         var moreLabel = list.dataset.more || 'more';
 
         var showMore = document.createElement('div');
@@ -381,7 +373,7 @@
         textEl.textContent = moreLabel;
         showMore.appendChild(countEl);
         showMore.appendChild(textEl);
-        list.appendChild(showMore);
+        list.after(showMore);
 
         function expand() {
             list.dataset.listExpanded = '1';

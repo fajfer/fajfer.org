@@ -1,17 +1,59 @@
 [
   {
     "title": {
+      "en": "From phishing to production shutdowns: How much can a cyberattack cost",
+      "pl": "Od phishingu do zatrzymania produkcji. Ile moze kosztować cyberatak"
+    },
+    "event": "Dzień Otwarty z Canon Polska",
+    "eventUrl": "https://www.canon.pl/business/insights/events/dzien-otwarty-druk-produkcyjny/",
+    "date": "2026-11-24"
+  },
+  {
+    "title": {
+      "en": "Open Poland: Open-Source Solutions in Business, Government, and the Nonprofit Sector",
+      "pl": "Polska otwarta: rozwiązania open-source w praktyce biznesu, administracji i trzeciego sektora"
+    },
+    "event": "Dzień Otwartych Technologii",
+    "eventUrl": "https://www.gov.pl/web/cyfryzacja/dzien-otwartych-technologii--zapraszamy-na-wydarzenie",
+    "date": "2026-11-12"
+  },
+  {
+    "title": {
+      "en": "Open Source under control",
+      "pl": "Open Source pod kontrolą"
+    },
+    "event": "Mega Sekurak Hacking Party",
+    "eventUrl": "https://hackingparty.pl/",
+    "date": "2026-10-27"
+  },
+  {
+    "title": {
+      "en": "Summary of FSFE Activities in 2026",
+      "pl": "Podsumowanie działań FSFE w 2026 roku"
+    },
+    "event": "Jesień Linuksowa",
+    "eventUrl": "https://jesien.org/2026/",
+    "date": "2026-10-24"
+  },
+  {
+    "title": {
       "en": "Open Source under control",
       "pl": "Open Source pod kontrolą"
     },
     "event": "Jesień Linuksowa",
-    "year": 2026,
-    "description": {
-      "en": "During this talk, I will examine free and open-source software from the perspective of an organization that needs to use it securely. I will present mechanisms for assessing components, verifying the provenance of artifacts, and mitigating risk. I will discuss, among other things, SCA, SBOM, SLSA, signing and verifying artifacts, and selected tools and practices developed within the OpenSSF.",
-      "pl": "Podczas prelekcji spojrzę na wolne i otwarte oprogramowanie z perspektywy organizacji, która musi bezpiecznie z niego korzystać. Przedstawię mechanizmy służące do oceny komponentów, weryfikowania pochodzenia artefaktów i ograniczania ryzyka. Omówię między innymi SCA, SBOM, SLSA, podpisywanie i weryfikowanie artefaktów oraz wybrane narzędzia i praktyki rozwijane w ramach OpenSSF."
+    "eventUrl": "https://jesien.org/2026/",
+    "date": "2026-10-23",
+    "slidesUrl": "/slides/jesien2026/slides.html"
+  },
+  {
+    "title": {
+      "en": "Security Architecture: Free and Open Source Software in the Service of Digital Sovereignty",
+      "pl": "Architektura bezpieczeństwa. Wolne i otwarte oprogramowanie w służbie suwerenności cyfrowej"
     },
-    "slidesUrl": "/slides/jesien2026/slides.html",
-    "tags": ["Cybersecurity", "Supply Chain", "Free Software"]
+    "event": "Regeneracja!",
+    "eventUrl": "https://regeneracja.plse.org.pl/",
+    "date": "2026-09-04",
+    "videoUrl": "https://www.youtube.com/watch?v=b3vsI51pQmI"
   },
   {
     "title": {
@@ -19,14 +61,10 @@
       "pl": "Nightscout, czyli jak wolne oprogramowanie upraszcza życie diabetykom"
     },
     "event": "Poznańska Impreza Wolnego Oprogramowania",
-    "year": 2026,
-    "description": {
-      "en": "When thousands of non-technical people help each other on social media to compile code and set up software on a virtual machine, it shows that the topic is important to people. I invite you to a talk dedicated to the Nightscout and AndroidAPS ecosystem, solutions that allow people with diabetes to create an electronic \"artificial pancreas.\" We will explore this world from the inside, answer the question of why they care so much about controlling the device, why this is the only sensible way to operate, why medical certifications do not keep up with patients' needs, and how we can support them.",
-      "pl": "Gdy tysiące nietechnicznych osób pomaga sobie na mediach społecznościowych w skompilowaniu kodu i postawieniu oprogramowania na wirtualnej maszynie to czuć, że temat jest dla ludzi ważny.. Zapraszam na prelekcję poświęconą ekosystemowi Nightscout oraz AndroidAPS, rozwiązaniom dzięki którym osoby chorujące na cukrzycę tworzą elektroniczną \"sztuczną trzustkę\". Poznamy ten świat od kuchni, odpowiemy sobie na pytanie dlaczego tak bardzo zależy im na kontroli nad urządzeniem i dlaczego to jedyny sensowny sposób działania, dlaczego certyfikacje medyczne nie nadążają za potrzebami pacjentów i jak możemy ich wesprzeć."
-    },
+    "eventUrl": "https://2026.piwo.sh/",
+    "date": "2026-05-30",
     "slidesUrl": "/slides/piwo2026.html",
-    "videoUrl": "https://www.youtube.com/live/xXuempl1wKY?si=jJxWxXBbRMKeCBq9&t=12013",
-    "tags": ["Digital Sovereignty", "Free Software"]
+    "videoUrl": "https://www.youtube.com/live/xXuempl1wKY?si=jJxWxXBbRMKeCBq9&t=12013"
   },
   {
     "title": {
@@ -34,12 +72,8 @@
       "pl": "ActivityPub w praktyce: Odkryj serce Fediwersum"
     },
     "event": "European Critical Infrastructure Hackathon",
-    "year": 2026,
-    "description": {
-      "en": "When talking about the sovereignity of the social media it's hard to omit the existence of the Fediverse. During the workshops, we will learn the concepts of fediverse, look at few working examples and delve into the ActivityPub protocol which is responsible for all the magic involved. At the end of the workshops we will have a minimal software capable of communication with the rest of the world. ",
-      "pl": "Kiedy mówimy o suwerenności mediów społecznościowych, trudno pominąć istnienie Fediwersum. Podczas warsztatów poznamy koncepcje fediverse, przyjrzymy się kilku działającym przykładom i zagłębimy się w protokół ActivityPub, który odpowiada za całą magię z nim związaną. Na koniec warsztatów będziemy mieli minimalistyczne oprogramowanie zdolne do komunikacji z resztą świata."
-    },
-    "tags": ["ActivityPub", "Fediverse"]
+    "eventUrl": "https://criticalhackathon.com/",
+    "date": "2026-01-23"
   },
   {
     "title": {
@@ -47,13 +81,9 @@
       "pl": "likec4 - warsztaty z architektury jako kod"
     },
     "event": "Jesień Linuksowa",
-    "year": 2025,
-    "description": {
-      "en": "During the workshop, we will explore the likec4 ecosystem (https://likec4.dev/) - Architecture-as-a-Code tools for describing architecture and visualizing it as shared, interactive documentation through diagrams or presentations. For the workshop, we need a development environment with Visual Studio Code with the likec4 plugin, git, docker, python interpreter; advanced users will manage with any text editor and an environment capable of running OCI containers.",
-      "pl": "Podczas warsztatów poznamy ekosystem likec4 (https://likec4.dev/) - narzędzia klasy Architecture-as-a-Code do opisywania architektury i wizualizowania jej jako wspólnej, interaktywnej dokumentacji poprzez diagramy czy prezentacje. Do warsztatów potrzebujemy środowiska programistycznego z Visual Studio Code z pluginem likec4, git, docker,interpreter pythona, zaawansowani użytkownicy dadzą radę z dowolnym edytorem tekstowym i środowiskiem będącym w stanie uruchamiać kontenery OCI."
-    },
-    "slidesUrl": "https://github.com/fajfer/likec4-jesien",
-    "tags": ["DevOps", "Software Engineering"]
+    "eventUrl": "https://jesien.org/2025/",
+    "date": "2025-10-24",
+    "slidesUrl": "https://github.com/fajfer/likec4-jesien"
   },
   {
     "title": {
@@ -61,13 +91,34 @@
       "pl": "Podpisywanie i weryfikacja podpisów obrazów kontenerów OCI"
     },
     "event": "Jesień Linuksowa",
-    "year": 2024,
-    "description": {
-      "en": "In this talk, I will share my experiences with container image signatures, from the process of creating and signing them to the mechanisms for automatic verification. We will explore the technologies and tools used for this purpose, see what is commonly used in open source projects, and discuss how it can be applied in our work.",
-      "pl": "W swojej prezentacji chciałbym przejść przez moje doświadczenia związane z podpisami obrazów tj. od procesu wytworzenia i rzeczywistego podpisania do mechanizmów automatycznej weryfikacji tych podpisów. Przejdziemy przez technologie i narzędzia do tego służące, zobaczymy czego używa się powszechnie w projektach open sourcowych i co z tego może nam się przydać w naszej pracy."
+    "eventUrl": "https://jesien.org/2024/",
+    "date": "2024-10-26",
+    "videoUrl": "https://www.youtube.com/watch?v=bg_bMo25AOo"
+  },
+  {
+    "title": {
+      "en": "Prometheus and an Example of AI-Based Architecture",
+      "pl": "Prometheus i przykład architektury z użyciem AI"
     },
-    "slidesUrl": null,
-    "videoUrl": "https://www.youtube.com/watch?v=bg_bMo25AOo",
-    "tags": ["Cloud", "DevOps", "Security"]
+    "event": "Różne oblicza AI #1 | Google Developers Group",
+    "eventUrl": "https://crossweb.pl/wydarzenia/rozne-oblicza-ai-1-listopad-2018/",
+    "date": "2018-11-22"
+  },
+  {
+    "title": {
+      "en": "Open Source in Agriculture",
+      "pl": "Open Source w Rolnictwie"
+    },
+    "event": "Hacktoberfest",
+    "date": "2018-10-13"
+  },
+  {
+    "title": {
+      "en": "Netflix or Chill",
+      "pl": "Netflix or Chill"
+    },
+    "event": "Poznańska Impreza Wolnego Oprogramowania",
+    "eventUrl": "https://piwo.sh",
+    "date": "2017-05-17"
   }
 ]
