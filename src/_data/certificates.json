@@ -76,6 +76,13 @@
     "tab": "Kubernetes",
     "items": [
       {
+        "name": "CKS: Certified Kubernetes Security Specialist",
+        "issuer": "The Linux Foundation",
+        "year": "2026 - 2028",
+        "image": "/img/certs/cks.png",
+        "url": "https://www.credly.com/badges/1ed93003-f27a-4268-8fff-c19238744d3f/public_url"
+      },
+      {
         "name": "CKAD: Certified Kubernetes Application Developer",
         "issuer": "The Linux Foundation",
         "year": "2026 - 2028",
@@ -85,7 +92,7 @@
       {
         "name": "CKA: Certified Kubernetes Administrator",
         "issuer": "The Linux Foundation",
-        "year": "2025 - 2027",
+        "year": "2025 - 2028",
         "image": "/img/certs/cka.png",
         "url": "https://www.credly.com/badges/d15cd2f5-1c7e-433c-bf41-6487760dda32/public_url"
       },
