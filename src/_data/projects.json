@@ -122,8 +122,8 @@
           "pl": "OpenBadge Inspector"
         },
         "description": {
-          "en": "Finds Open Badges baked into images on a page and shows whether they are valid.",
-          "pl": "Wykrywa odznaki typu Open Badges osadzone w obrazkach na stronie."
+          "en": "Browser plugin which finds Open Badges baked into images on a page and shows whether they are valid.",
+          "pl": "Plugin do przeglądarki wyszukujący odznaki typu Open Badges osadzone w obrazkach na stronie."
         },
         "url": "https://addons.mozilla.org/en-US/firefox/addon/openbadge-inspector/",
         "tags": ["Web Development"]
