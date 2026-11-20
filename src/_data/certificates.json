@@ -170,6 +170,13 @@
     "tab": "e-Learning",
     "items": [
       {
+        "name": "LFEL1012: Secure AI/ML-Driven Software Development",
+        "issuer": "The Linux Foundation",
+        "year": "2026",
+        "image": "/img/certs/lfel1012.png",
+        "url": "https://www.credly.com/badges/6a52c710-9310-4626-b4c6-07fe877f8737/public_url"
+      },
+      {
         "name": "LFD137: Open Source Contribution in Finance",
         "issuer": "The Linux Foundation",
         "year": "2026",
