@@ -2,6 +2,7 @@ module.exports = {
     author: "Damian Fajfer",
     authorUri: "https://fajfer.org",
     ageKey: "age1yubikey1qgwlzrkxufdfgs332hps252vsmkyw4ewnggvrsyge3c7s623rwu3v65whu5",
+    sshKey: "ecdsa-sha2-nistp384 AAAAE2VjZHNhLXNoYTItbmlzdHAzODQAAAAIbmlzdHAzODQAAABhBH3PB9b6bOFmvS7zBbiaj3rT0wmsn2LGNk+k2eDeBujEvNHnZLbmh14b1AjSpwzrL+qix29VCvinakCA7UsvcfXUSFsF+xPqTcFZ54MxtqCgfj92r+4ZuUG+yj/TSbjWTg==",
     // Profiles elsewhere, emitted as schema.org "sameAs" on the about page.
     sameAs: [
         "https://github.com/fajfer",
