@@ -1,6 +1,7 @@
 module.exports = {
     author: "Damian Fajfer",
     authorUri: "https://fajfer.org",
+    ageKey: "age1yubikey1qgwlzrkxufdfgs332hps252vsmkyw4ewnggvrsyge3c7s623rwu3v65whu5",
     // Profiles elsewhere, emitted as schema.org "sameAs" on the about page.
     sameAs: [
         "https://github.com/fajfer",

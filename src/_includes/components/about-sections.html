@@ -7,6 +7,9 @@
         <div class="about-hero-text">
             <h1>{{ data.author }}</h1>
             <p>{{ aboutDamian }}</p>
+            {% if data.ageKey %}
+            <p class="about-key"><span class="about-key-label">{{ ageKeyLabel }}</span> <code>{{ data.ageKey }}</code></p>
+            {% endif %}
         </div>
     </section>
 
