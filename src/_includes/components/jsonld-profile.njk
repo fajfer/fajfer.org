@@ -1,0 +1,14 @@
+{% set profile = {
+    lang: lang,
+    site: data,
+    url: page.url,
+    title: title,
+    description: aboutDamian,
+    career: career,
+    education: education,
+    volunteer: volunteer,
+    certificates: certificates,
+    organizations: organizations,
+    talks: talks
+} %}
+<script type="application/ld+json">{{ profile | profileJsonLd | safe }}</script>

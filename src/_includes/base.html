@@ -17,6 +17,7 @@
     <meta name="description" content="{{ title }}">
     <meta name="author" content="{{ data.author }}">
     <meta name="keywords" content="{{ data.keywords[lang] }}">
+    {% if jsonld == "profile" %}{% include "components/jsonld-profile.njk" %}{% endif %}
   </head>
 
   <body id="nightModeDiv" class="dark-theme" vocab="https://schema.org/">

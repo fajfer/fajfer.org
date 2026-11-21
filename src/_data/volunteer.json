@@ -4,6 +4,7 @@
     "organization": "Free Software Foundation Europe (FSFE)",
     "organizationUrl": "https://fsfe.org",
     "period": { "en": "Jan 2018 – Present", "pl": "Sty 2018 – Teraz" },
+    "start": "2018-01", "end": null,
     "description": {
       "en": "Coordinating FSFE activities in Poland, advocating for free software and digital rights, organizing local events and community outreach.",
       "pl": "Koordynowanie działań FSFE w Polsce, propagowanie wolnego oprogramowania i praw cyfrowych, organizowanie lokalnych wydarzeń i działań społecznościowych."
@@ -16,6 +17,7 @@
     "organization": "Bank Pekao S.A.",
     "organizationUrl": "https://www.pekao.com.pl",
     "period": { "en": "Sep 2020 – Present", "pl": "Wrz 2020 – Teraz" },
+    "start": "2020-09", "end": null,
     "description": {
       "en": "Leading corporate volunteering initiatives, coordinating volunteer programs and social responsibility activities.",
       "pl": "Prowadzenie inicjatyw wolontariatu korporacyjnego, koordynowanie programów wolontariackich."
@@ -28,6 +30,7 @@
     "organization": "European Cybersecurity Challenge",
     "organizationUrl": "https://ecsc.eu",
     "period": { "en": "Oct 2025", "pl": "Paź 2025" },
+    "start": "2025-10", "end": "2025-10",
     "description": {
       "en": "Served as a watchdog at the ENISA European Cybersecurity Challenge, supporting the integrity and fair conduct of the competition.",
       "pl": "Pełnienie roli obserwatora na Europejskim Wyzwaniu Cyberbezpieczeństwa ENISA, wspieranie integralności i rzetelnego przebiegu zawodów."
@@ -40,6 +43,7 @@
     "organization": "Wielka Orkiestra Świątecznej Pomocy (WOŚP)",
     "organizationUrl": "https://www.wosp.org.pl",
     "period": { "en": "Oct 2016 - Jan 2017", "pl": "Paź 2016 - Sty 2017" },
+    "start": "2016-10", "end": "2017-01",
     "description": {
       "en": "Served as a staff member at WOŚP, conducting online auctions and counting collected funds.",
       "pl": "Pełnienie roli członka sztabu podczas WOŚP, prowadzenie aukcji internetowych i liczenie zebranych środków."
@@ -52,6 +56,7 @@
     "organization": "Magic the Gathering",
     "organizationUrl": "https://magic.wizards.com",
     "period": { "en": "Mar 2014 - May 2016", "pl": "Mar 2014 - Maj 2016" },
+    "start": "2014-03", "end": "2016-05",
     "description": {
       "en": "Local community founder, judging international, competitive events in Poland and Lithuania.",
       "pl": "Założyciel lokalnej społeczności, sędziowanie międzynarodowych turniejów w Polsce i na Litwie."

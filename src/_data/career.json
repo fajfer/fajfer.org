@@ -4,6 +4,7 @@
     "company": "Bank Pekao S.A.",
     "companyUrl": "https://www.pekao.com.pl",
     "period": { "en": "Jun 2020 – Present", "pl": "Cze 2020 – Teraz" },
+    "start": "2020-06", "end": null,
     "image": "orgs/pekao.jpeg",
     "tags": ["Cloud", "Cybersecurity", "DevOps", "Platform Engineering"]
   },
@@ -12,6 +13,7 @@
     "company": "PwC", 
     "companyUrl": "https://www.pwc.com",
     "period": { "en": "Aug 2019 – May 2020", "pl": "Sie 2019 – Maj 2020" },
+    "start": "2019-08", "end": "2020-05",
     "description": {
       "en": "IT Consulting (DevOps, Cloud, SDLC)",
       "pl": "Konsulting IT (DevOps, Chmura, SDLC)"
@@ -24,6 +26,7 @@
     "company": "Tenesys", 
     "companyUrl": "https://tenesys.io",
     "period": { "en": "Jul 2018 – Jul 2019", "pl": "Lip 2018 – Lip 2019" },
+    "start": "2018-07", "end": "2019-07",
     "image": "orgs/tenesys.png",
     "tags": ["Consulting", "Cloud", "DevOps"]
   },
@@ -32,6 +35,7 @@
     "company": "Politechnika Poznańska", 
     "companyUrl": "https://put.poznan.pl/",
     "period": { "en": "Oct 2017 – Jul 2018", "pl": "Paź 2017 – Lip 2018" },
+    "start": "2017-10", "end": "2018-07",
     "image": "orgs/politechnika.png",
     "tags": ["Linux"]
   }

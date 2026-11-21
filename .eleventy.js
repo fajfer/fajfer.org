@@ -39,6 +39,9 @@ module.exports = function (eleventyConfig) {
         return css.replaceAll('.tag', '.chip');
     });
 
+    // schema.org JSON-LD for the about pages (see _config/jsonld.js)
+    eleventyConfig.addFilter("profileJsonLd", require("./_config/jsonld.js"));
+
     // Minify CSS code
     eleventyConfig.addFilter("cssmin", function (css) {
         return new CleanCSS({}).minify(css).styles;

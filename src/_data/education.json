@@ -4,6 +4,7 @@
     "school": "Szkoła Główna Gospodarstwa Wiejskiego",
     "schoolUrl": "https://sggw.edu.pl/",
     "period": { "en": "2024 – 2025", "pl": "2024 – 2025" },
+    "start": "2024", "end": "2025",
     "image": "orgs/sggw.jpg"
   },
   {
@@ -11,6 +12,7 @@
     "school": "Politechnika Warszawska",
     "schoolUrl": "https://www.pw.edu.pl/",
     "period": { "en": "2023 – 2025", "pl": "2023 – 2025" },
+    "start": "2023", "end": "2025",
     "image": "orgs/pw.png"
   },
   {
@@ -18,6 +20,7 @@
     "school": "Politechnika Warszawska",
     "schoolUrl": "https://www.pw.edu.pl/",
     "period": { "en": "2019 – 2022", "pl": "2019 – 2022" },
+    "start": "2019", "end": "2022",
     "image": "orgs/pw.png"
   },
   {
@@ -25,6 +28,7 @@
     "school": "Politechnika Poznańska",
     "schoolUrl": "https://put.poznan.pl/",
     "period": { "en": "2015 – 2019", "pl": "2015 – 2019" },
+    "start": "2015", "end": "2019",
     "image": "orgs/politechnika.png"
   },
   {
@@ -32,6 +36,7 @@
     "school": "Zespół Szkół Nr 2 im. 9. Pułku Strzelców Konnych",
     "schoolUrl": "https://zs2.grajewo.pl",
     "period": { "en": "2010 – 2015", "pl": "2010 – 2015" },
+    "start": "2010", "end": "2015",
     "image": "orgs/jednostka.png"
   }
 ]

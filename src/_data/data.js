@@ -1,6 +1,13 @@
 module.exports = {
     author: "Damian Fajfer",
     authorUri: "https://fajfer.org",
+    // Profiles elsewhere, emitted as schema.org "sameAs" on the about page.
+    sameAs: [
+        "https://github.com/fajfer",
+        "https://gitlab.com/fajfer/",
+        "https://www.linkedin.com/in/dfajfer/",
+        "https://mastodon.social/@fajfer"
+    ],
     languages: ["en", "pl"],
     languageLabels: {
         en: "English",
